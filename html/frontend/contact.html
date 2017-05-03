@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div id="map2" class="height-300"></div>
+<section>
+<div class="container"><div class="row">
+<!-- FORM -->
+<div class="col-md-9 col-sm-9">
+<h3>¡Ponte en contacto con nosotros!</h3>
+{% if messages %}
+		<div style="display: block;" class="alert alert-success margin-bottom-30">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		    {% for message in messages %}
+		    <strong> {{ message }}</strong>
+		    {% endfor %}
+		</div>
+{% endif %}
+	{% if form.errors %}
+		<div style="display: block;" class="alert alert-danger margin-bottom-30">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			<strong>¡Hay un error en el formulario!</strong> Revisa tu información.
+		</div>
+	{% endif %}
+	<form action="" method="post">{% csrf_token %}
+		<fieldset>
+			<div class="row">
+			<div class="form-group">
+			<div class="col-md-4">
+			<label for="contact:name">{{form.name.label}}</label>
+				{{form.name}}
+				<small class="text-danger">{{form.name.errors.as_text}}</small>
+			</div>
+			<div class="col-md-4">
+			<label for="contact:email">{{form.email.label}}</label>
+				{{form.email}}
+				<small class="text-danger">{{form.email.errors.as_text}}</small>
+			</div>
+			<div class="col-md-4">
+			<label for="contact:phone">{{form.phone.label}}</label>
+				{{form.phone}}
+				<small class="text-danger">{{form.phone.errors.as_text}}</small>
+			</div>
+			</div>
+			</div>
+			<div class="row">
+			<div class="form-group">
+			<div class="col-md-8">
+			<label for="contact:subject">{{form.company.label}}</label>
+			{{form.company}}
+			<small class="text-danger"></small>
+			</div>
+			<div class="col-md-4">
+			<label for="contact_department">{{form.subject.label}}</label>
+			{{form.subject}}
+			<small class="text-danger">{{form.subject.errors.as_text}}</small>
+			</div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+				<div class="col-md-12">
+				<label for="contact:message">{{form.content.label}}</label>
+				{{form.content}}
+				<small class="text-danger">{{form.content.errors.as_text}}</small>
+				</div>
+				</div>
+			</div>
+			</fieldset>
+			<div class="row">
+			<div class="col-md-12">
+			<button type="submit" class="btn btn-primary"><i class="fa fa-envelope"></i> Enviar</button>
+			</div>
+			</div>
+			</form>
+	</div>
+	<!-- /FORM -->
+	<!-- INFO -->
+	<div class="col-md-3 col-sm-3">
+	<h3>Visítanos</h3>
+	<hr />
+	<p>
+		<span class="block"><strong><i class="fa fa-map-marker"></i> Dirección:</strong> Sendero de la Ladera #16 Milenio III CP 76060. Querétaro, Qro. </span>
+		<span class="block"><strong><i class="fa fa-phone"></i> Teléfono:</strong> <a>+ 52 1 (442) - 4554 - 213</a></span>
+		<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@altingenieria.mx">info@altingenieria.mx</a></span>
+	</p>
+	<hr />
+	<h4 class="font300">Horarios de oficina</h4>
+	<p>
+		<span class="block"><strong>Lunes a Viernes:</strong> 9am a 7pm</span>
+		<span class="block"><strong>Sábado y Domingo:</strong> Cerrado</span>
+	</p>
+</div>
+
+</div></div>
+</section>
+
+{% endblock %}
+
+
+

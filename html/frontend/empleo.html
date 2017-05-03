@@ -1,0 +1,297 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+			<!-- -->
+			<section>
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-md-7 col-sm-7">
+
+						{% if messages %}
+								<div style="display: block;" class="alert alert-success margin-bottom-30">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+								    {% for message in messages %}
+								    <strong> {{ message }}</strong>
+								    {% endfor %}
+								</div>
+						{% endif %}
+							{% if form.errors %}
+								<div style="display: block;" class="alert alert-danger margin-bottom-30">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+									<strong>¡Hay un error en el formulario!</strong> Revisa tu información.
+								</div>
+							{% endif %}
+							<ul class="nav nav-tabs nav-bottom-border">
+								<li class="active"><a href="#home" data-toggle="tab">Desarrolador LabView</a></li>
+								<li><a href="#profile" data-toggle="tab">Programador</a></li>
+							</ul>
+
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="home">
+																		<div class="heading-title heading-border-bottom heading-color">
+																		<br>
+								<span class="pull-right text-danger">Vacante Ocupada</span>
+								
+								<h2 class="size-20"><span>01.</span>Desarrolador LabView</h2>
+							</div>
+
+							<div class="margin-bottom-80">
+								<p>Vitae autem libero ullam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+
+								<h5>REQUERIMIENTOS</h5>
+								<ul class="list-unstyled list-icons">
+									<li><i class="fa fa-check"></i> Nunc quis metus ultrices turpis congue interdum </li>
+									<li><i class="fa fa-check"></i> Donec hendrerit lorem fringilla</li>
+									<li><i class="fa fa-check"></i> Aliquam facilisis, lacus tincidunt </li>
+									<li><i class="fa fa-check"></i> Nam gravida ut magna at consectetur.</li>
+									<li><i class="fa fa-check"></i> Curabitur pretium, turpis sed finibus.</li>
+									<li><i class="fa fa-check"></i> Ut fringilla vehicula lectus a rutrum.</li>
+									<li><i class="fa fa-check"></i> Seuismod viverra dolor malesuada sit amet.</li>
+									<li><i class="fa fa-check"></i> Good Communication Skills</li>
+									<li><i class="fa fa-check"></i> Team Player</li>
+								</ul>
+									<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+
+								</div>
+
+								<h5>ADICIONAL VALORABLE</h5>
+								<ul class="list-unstyled list-icons">
+									<li><i class="fa fa-plus-square"></i> Magni dolore eos eius ducimus corporis quos</li>
+									<li><i class="fa fa-plus-square"></i> Nemo, natus voluptatibus adipisci porro</li>
+									<li><i class="fa fa-plus-square"></i> Autem libero ullam omnis cupiditate quam</li>
+									<li><i class="fa fa-plus-square"></i> Dolore eos eius ducimus corporis</li>
+									<li><i class="fa fa-plus-square"></i> perspiciatis quis iste, vitae autem.</li>
+									<li><i class="fa fa-plus-square"></i> Adipisci porro magni dolore eos</li>
+									<li><i class="fa fa-plus-square"></i> Lorem ipsum dolor sit amet</li>
+								</ul>
+								<div class="row">
+
+								</div>
+								
+							</div>
+								</div>
+								<div class="tab-pane fade" id="profile">
+									<div class="heading-title heading-border-bottom heading-color">
+									<br>
+								<span class="pull-right text-muted">1 Disponible</span>
+								<h2 class="size-20"><span>02.</span> Programador &amp; Diseñador</h2>
+							</div>
+
+							<div class="margin-bottom-80">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+
+								<h5>REQUERIMIENTOS</h5>
+								<ul class="list-unstyled list-icons">
+									<li><i class="fa fa-check"></i> Computer Science &amp; Engineering </li>
+									<li><i class="fa fa-check"></i> 3+ years analytics experience</li>
+									<li><i class="fa fa-check"></i> 3+ years of Public Speaking experience</li>
+									<li><i class="fa fa-check"></i> Minimum of 4 live project roll outs.</li>
+									<li><i class="fa fa-check"></i> Good Communication Skills</li>
+									<li><i class="fa fa-check"></i> Team Player</li>
+								</ul>
+
+
+								<h5>ADICIONAL VALORABLE</h5>
+								<ul class="list-unstyled list-icons">
+									<li><i class="fa fa-plus-square"></i> Lorem ipsum dolor sit amet</li>
+									<li><i class="fa fa-plus-square"></i> Nemo, natus voluptatibus adipisci porro</li>
+									<li><i class="fa fa-plus-square"></i> Dolore eos eius ducimus corporis</li>
+									<li><i class="fa fa-plus-square"></i> perspiciatis quis iste, vitae autem.</li>
+									<li><i class="fa fa-plus-square"></i> Autem libero ullam omnis cupiditate quam</li>
+									<li><i class="fa fa-plus-square"></i> Magni dolore eos eius ducimus corporis quos</li>
+									<li><i class="fa fa-plus-square"></i> Adipisci porro magni dolore eos</li>
+								</ul>
+								<div class="row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+
+								</div>
+								
+							</div>
+								</div>
+								<div class="tab-pane fade" id="dropdown1">
+									<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold.</p>
+								</div>
+								<div class="tab-pane fade" id="dropdown2">
+									<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party.</p>
+								</div>
+							</div>
+						</div>
+					
+						<!-- LEFT 
+						
+						<div class="col-md-7 col-sm-7">
+
+							<div class="heading-title heading-border-bottom heading-color">
+								<span class="pull-right text-muted">2 available</span>
+								<h2 class="size-20"><span>01.</span> PR &amp; MARKETING</h2>
+							</div>
+
+							<div class="margin-bottom-80">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+
+								<h5>REQUIREMENTS</h5>
+								<ul class="list-unstyled list-icons">
+									<li><i class="fa fa-check"></i> Computer Science &amp; Engineering </li>
+									<li><i class="fa fa-check"></i> 3+ years analytics experience</li>
+									<li><i class="fa fa-check"></i> 3+ years of Public Speaking experience</li>
+									<li><i class="fa fa-check"></i> Minimum of 4 live project roll outs.</li>
+									<li><i class="fa fa-check"></i> Good Communication Skills</li>
+									<li><i class="fa fa-check"></i> Team Player</li>
+								</ul>
+
+								<h5>WHAT WE EXPECT?</h5>
+								<ul class="list-unstyled list-icons">
+									<li><i class="fa fa-plus-square"></i> Lorem ipsum dolor sit amet</li>
+									<li><i class="fa fa-plus-square"></i> Nemo, natus voluptatibus adipisci porro</li>
+									<li><i class="fa fa-plus-square"></i> Dolore eos eius ducimus corporis</li>
+									<li><i class="fa fa-plus-square"></i> perspiciatis quis iste, vitae autem.</li>
+									<li><i class="fa fa-plus-square"></i> Autem libero ullam omnis cupiditate quam</li>
+									<li><i class="fa fa-plus-square"></i> Magni dolore eos eius ducimus corporis quos</li>
+									<li><i class="fa fa-plus-square"></i> Adipisci porro magni dolore eos</li>
+								</ul>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-3d btn-teal btn-xlg btn-block margin-top-30">
+											SEND APPLICATION
+											<span class="block font-lato">We'll get back to you within 48 hours</span>
+										</button>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+						
+
+						<!-- RIGHT - FORM -->
+						<div class="col-md-5 col-sm-5">
+
+							<div class="heading-title heading-border-bottom">
+								<h2 class="size-20">APLICA AHORA</h2>
+							</div>
+
+
+							<form class="validate" id="careers_apply" action="" method="post" enctype="multipart/form-data" data-success="Sent! Thank you!" data-toastr-position="top-right">
+							{% csrf_token %}
+								<fieldset>
+									<!-- required [php action request] -->
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-6 col-sm-6">
+												<label for="contact:name">{{form.name.label}}</label>
+												{{form.name}}
+											<small class="text-danger">{{form.name.errors.as_text}}</small>
+											</div>
+											<div class="col-md-6 col-sm-6">
+												<label for="contact:lastname">{{form.age.label}}</label>
+												{{form.age}}
+												<small class="text-danger">{{form.age.errors.as_text}}</small>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-6 col-sm-6">
+												<label for="contact:email">{{form.email.label}}</label>
+												{{form.email}}
+												<small class="text-danger">{{form.email.errors.as_text}}</small>
+											</div>
+											<div class="col-md-6 col-sm-6">
+												<label for="contact:phone">{{form.phone.label}}</label>
+												{{form.phone}}
+												<small class="text-danger">{{form.phone.errors.as_text}}</small>												
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-12 col-sm-12">
+												<label for="contact:position">{{form.position.label}}</label>
+												{{form.position}}
+												<small class="text-danger">{{form.position.errors.as_text}}</small>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-6 col-sm-6">
+												<label for="contact:salary">{{form.salary.label}}</label>
+												{{form.salary}}
+												<small class="text-danger">{{form.salary.errors.as_text}}</small>
+											</div>
+											<div class="col-md-6 col-sm-6">
+												<label for="contact:available">{{form.available.label}}</label>
+												<select class="form-control" name="available" required="">
+													<option value="">--- Selecciona ---</option>
+													<option value="Si">Si</option>
+													<option value="No">No</option>
+													</select>
+												<small class="text-danger">{{form.available.errors.as_text}}</small>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-12 col-sm-12">
+												<label for="contact:message">{{form.content.label}}</label>
+												{{form.content}}
+												<small class="text-danger">{{form.content.errors.as_text}}</small>
+											</div>
+										</div>
+									</div>
+
+<!-- custom file upload -->
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-12">
+												<label>
+													Adjunta un Archivo 
+													<small class="text-muted">Curriculum Vitae - optional</small>
+												</label>
+
+												<!-- custom file upload -->
+												<div class="fancy-file-upload fancy-file-primary">
+													<i class="fa fa-upload"></i>
+													<input type="file" class="form-control" name="contact[attachment]" onchange="jQuery(this).next('input').val(this.value);" />
+													<input type="text" class="form-control" placeholder="no file selected" readonly="" />
+													<span class="button">Selecciona Archivo</span>
+												</div>
+												<small class="text-muted block">Max Tamaño de Archivo: 10Mb (zip/pdf/jpg/png)</small>
+
+											</div>
+										</div>
+									</div>
+<!-- custom file upload -->
+								</fieldset>
+
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-3d btn-teal btn-xlg btn-block margin-top-30">
+											ENVIAR APLICACIÓN
+											<span class="block font-lato">Te responderemos lo más pronto posible</span>
+										</button>
+									</div>
+
+							</form>
+
+							<hr class="margin-top-60" />
+
+					
+
+						</div>
+						
+					</div>
+					
+				</div>
+			</section>
+			<!-- / -->
+{% endblock %}

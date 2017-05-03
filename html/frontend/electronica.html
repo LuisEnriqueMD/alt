@@ -1,0 +1,404 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+			<!-- INTRODUCCION -->
+			<section>
+				<div class="container">
+					<header class="text-center">
+						<h2 class="nomargin">Lorem Ipsum Dolor</h2>
+						<p class="font-lato size-20 nomargin">Vivamus commodo nunc a mauris</p>
+					</header>
+					<div class="divider divider-center divider-color"><!-- divider -->
+						<i class="fa fa-microchip"></i>
+					</div>
+					<article class="row">
+						<div class="col-md-6">
+							<!-- OWL SLIDER -->
+							<div class="owl-carousel buttons-autohide controlls-over" data-plugin-options='{"singleItem": true, "autoPlay": true, 							"navigation": true, "pagination": true, "transitionStyle":"backSlide"}'>
+								<div>
+									<img class="img-responsive" src="{% static 'media/alt/parallax1.jpeg' %}" alt="">
+								</div>
+								<div>
+									<img class="img-responsive" src="{% static 'media/alt/parallax2.jpeg' %}" alt="">
+								</div>
+								<div>
+									<img class="img-responsive" src="{% static 'media/alt/parallax3.jpeg' %}" alt="">
+								</div>
+							</div>
+							<!-- /OWL SLIDER -->
+						</div>
+						<div class="col-md-6">
+							<h3>ALT Ingeniería: Electrónica expertos en el área.</h3>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						</div>
+					</article>
+				</div>
+			</section>
+			<!-- END INTRODUCCION -->
+
+
+			<!-- DESCANSO VISUAL 1-->
+			<section class="theme-color">
+				<div class="container">
+					<div class="heading-title heading-dotted text-center">
+						<h4>Lorem Ipsum Dolor</h4>
+					</div>
+				</div>
+			</section>
+			<!--- END DESCANSO VISUAL 1-->
+
+
+
+			<!--SECCION CARACTERISTICAS SERVICIOS-->
+			<section>
+				<div class="container">
+					<header class="text-center">
+						<h2 class="nomargin">Lorem Ipsum Dolor</h2>
+						<p class="font-lato size-20 nomargin">Vivamus commodo nunc a mauris</p>
+					</header>
+					<div class="divider divider-center divider-color"><!-- divider -->
+						<i class="fa fa-chevron-down"></i>
+					</div>
+					<!-- FEATURED BOXES 3 -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover fa fa fa-pencil"></i>
+								<h4>Diseño Completo</h4>
+								<p>Abarcamos las áreas necesarias para entregar un producto completo.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover fa fa-star-o"></i>
+								<h4>Servicio Integral</h4>
+								<p>Nos involucramos en todas las fases del ciclo de vida del producto. Desde la concepción hasta la post-venta.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover fa  fa-user-o"></i>
+								<h4>Personalizado</h4>
+								<p>Nos apegamos fielmente a las necesidades y requisitos del cliente asesorando en detalle de las posibles soluciones.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover fa fa-exchange "></i>
+								<h4>Versatilidad y Flexibilidad</h4>
+								<p>Usamos la tecnología más adecuada para cada aplicación.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /FEATURED BOXES 3 -->
+
+				</div>
+			</section>
+			<!--- END SECCION CARACTERISTICAS SERVICIOS-->
+
+
+			<!-- SECCION PROCESOS-->
+			<section>
+				<div class="container">
+
+					<header class="text-center">
+						<h2 class="nomargin">Nuestro Proceso de Trabajo</h2>
+						<p class="font-lato size-20 nomargin">Nuestro proceso al éxito</p>
+					</header>
+					
+					<div class="divider divider-center"><!-- divider -->
+						<i class="fa fa-chevron-down"></i>
+					</div>
+
+					<ul class="process-steps process-steps-square nav nav-justified">
+						<li class="active">
+							
+							<a href="#step1" data-toggle="tab">1</a>
+							<h5>Mesa de Trabajo</h5>
+							</li>
+							
+						<li>
+							<a href="#step2" data-toggle="tab">2</a>
+							<h5>Planeación</h5>
+						</li>
+						<li>
+							<a href="#step3" data-toggle="tab">3</a>
+							<h5>Diseño</h5>
+						</li>
+						<li>
+							<a href="#step4" data-toggle="tab">4</a>
+							<h5>Desarollo</h5>
+						</li>
+						<li>
+							<a href="#step5" data-toggle="tab">5</a>
+							<h5>Pruebas</h5>
+						</li>
+						<li>
+							<a href="#step6" data-toggle="tab">6</a>
+							<h5>Entrega</h5>
+						</li>
+					</ul>
+
+					<div class="tab-content margin-top-30">
+						<div class="tab-pane active" id="step1">
+							<strong>Mesa de Trabajo</strong> heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+
+						<div class="tab-pane" id="step2">
+							<strong>Planeación</strong>  denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+
+						<div class="tab-pane" id="step3">
+							<strong>Diseño</strong>  tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+
+						<div class="tab-pane" id="step4">
+							<strong>Desarrollo</strong>  cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+
+						<div class="tab-pane" id="step5">
+							<strong>Pruebas</strong>  cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+						<div class="tab-pane" id="step6">
+							<strong>Entrega</strong>  Regan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!--- END SECCION PROCESOS-->
+
+
+			<!-- DESCANSO VISUAL 2-->
+			<section class="parallax parallax-2" style="background-image: url('{% static 'media/alt/electronica_descanso.jpeg' %}'); background-position: 50% 107px;">
+				<div class="overlay dark-7"><!-- dark overlay [1 to 9 opacity] --></div>
+				<div class="container text-center">
+					<h2 class="font-raleway margin-bottom-10">
+						<span class="countTo" data-speed="4000">15</span> Projectos Entregados
+					</h2>
+					<h3 class="size-25">Clientes<span> Satisfechos</span>. Desarrollos<span> Únicos</span>!</h3>
+				</div>
+			</section>
+			<!--- END DESCANSO VISUAL 2-->
+					<section>
+					<div class="container">
+							<header class="text-center">
+		                        <h2>"Nuestros Servicios"</h2>
+		                       
+		                        
+		                    </header>
+								<div class="divider divider-center">
+									<i class="fa fa-building"></i>
+								</div>
+								<div class="timeline">
+
+	                                <!-- Proyectos -->
+
+									<!-- ITEM -->
+									<div class="timeline-item timeline-item-bordered">
+										<!-- timeline entry -->
+										<div class="timeline-entry rounded"><!-- .rounded = entry -->
+											01<span>Diseño</span>
+											<div class="timeline-vline"><!-- vertical line --></div>
+										</div>
+										<!-- /timeline entry -->
+
+										<h2 class="uppercase bold size-17">Diseño y Rediseño</h2>
+										<p>Desarrollo desde un pequeño circuito hasta un sistema completo que no encuentre en el mercado.
+
+    Investigación y diseño inicial o completo.
+    Finalización de diseños incompletos.
+    Adaptación de equipos a sistemas de terceros.
+    Modificación o mejora para cumplir nuevos requisitos o por obsolescencia de componentes.
+    Fabricación y puesta en marcha de los prototipos.
+    Realización de ensayos y cumplimiento de normativas.
+
+</p>
+
+
+
+									</div>
+									<!-- /ITEM -->
+
+									<!-- ITEM -->
+									<div class="timeline-item timeline-item-bordered">
+										<!-- timeline entry -->
+										<div class="timeline-entry rounded"><!-- .rounded = entry -->
+											02<span>Industrialización</span>
+											<div class="timeline-vline"><!-- vertical line --></div>
+										</div>
+										<!-- /timeline entry -->
+
+										<h2 class="uppercase bold size-17">Industrialización</h2>
+										<p>La correcta industrialización garantiza la fabricación óptima de equipos electrónicos a costes y tiempos optimizados. Consiste tanto en el diseño o rediseño de un producto desde el punto de vista de su construcción, como en el de sus adecuados procesos de fabricación para una exitosa puesta en servicio.</p>
+
+									</div>
+									<!-- /ITEM -->
+
+									<!-- ITEM -->
+									<div class="timeline-item timeline-item-bordered">
+										<!-- timeline entry -->
+										<div class="timeline-entry rounded"><!-- .rounded = entry -->
+											03<span>offer</span>
+											<div class="timeline-vline"><!-- vertical line --></div>
+										</div>
+										<!-- /timeline entry -->
+
+										<h2 class="uppercase bold size-17">Gestión de Fabricación</h2>
+										<p> Consultoría de producción electrónica. Nos encargamos de: Preparación de la documentación necesaria. Búsqueda y adaptación de componentes. Puesta en marcha de la producción. Supervisión y seguimiento de los trabajos de la fábrica. Aprobación del resultado final.</p>
+
+									</div>
+									<!-- /ITEM -->
+
+
+	                        
+						</div>
+					</section>
+
+						<!-- PROJECTOS RELACIONADOS-->
+			<section>
+				<div class="container">
+
+					<header class="text-center margin-bottom-60">
+                        <h2>Nuestros Proyectos de Electronica</h2>
+                        <p class="lead font-lato"></p>
+                        <hr>
+                    </header>
+
+						<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
+							<div class="img-hover">
+								<a href="blog-single-default.html">
+									<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" alt="">
+								</a>
+
+								<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 1</a></h4>
+								<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+								<ul class="text-left size-12 list-inline list-separator">
+									<li>
+										<i class="fa fa-calendar"></i> 
+										29th Jan 2015
+									</li>
+									<li>
+										<a href="blog-single-default.html#comments">
+											<i class="fa fa-comments"></i> 
+											3
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="img-hover">
+								<a href="blog-single-default.html">
+									<img class="img-responsive" src="{% static 'media/alt/oximetro2.png' %}" alt="">
+								</a>
+
+								<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 2</a></h4>
+								<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+								<ul class="text-left size-12 list-inline list-separator">
+									<li>
+										<i class="fa fa-calendar"></i> 
+										29th Jan 2015
+									</li>
+									<li>
+										<a href="blog-single-default.html#comments">
+											<i class="fa fa-comments"></i> 
+											3
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="img-hover">
+								<a href="blog-single-default.html">
+									<img class="img-responsive" src="{% static 'media/alt/campana.png' %}" alt="">
+								</a>
+
+								<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 3</a></h4>
+								<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+								<ul class="text-left size-12 list-inline list-separator">
+									<li>
+										<i class="fa fa-calendar"></i> 
+										29th Jan 2015
+									</li>
+									<li>
+										<a href="blog-single-default.html#comments">
+											<i class="fa fa-comments"></i> 
+											3
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="img-hover">
+								<a href="blog-single-default.html">
+									<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" alt="">
+								</a>
+
+								<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 4</a></h4>
+								<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+								<ul class="text-left size-12 list-inline list-separator">
+									<li>
+										<i class="fa fa-calendar"></i> 
+										29th Jan 2015
+									</li>
+									<li>
+										<a href="blog-single-default.html#comments">
+											<i class="fa fa-comments"></i> 
+											3
+										</a>
+									</li>
+								</ul>
+							</div>
+		
+							<div class="img-hover">
+								<a href="blog-single-default.html">
+									<img class="img-responsive" src="{% static 'media/alt/oximetro2.png' %}" alt="">
+								</a>
+								<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 5</a></h4>
+								<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+								<ul class="text-left size-12 list-inline list-separator">
+									<li>
+										<i class="fa fa-calendar"></i> 
+										29th Jan 2015
+									</li>
+									<li>
+										<a href="blog-single-default.html#comments">
+											<i class="fa fa-comments"></i> 
+											3
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class=" height-370 dark alternate">
+					<div class="container">
+
+					<div class="heading-title heading-border nomargin-bottom-60">
+					
+						<h1>
+							ALT es: 
+							<!-- 
+							word rotator - default delay: 2000. 
+							Change rotating delay: data-delay="5000" 
+							-->
+							<span class="word-rotator" data-delay="2000">
+								<span class="items">
+									<span>Ingeniería</span>
+									<span>Innovación</span>
+									<span>Servicio</span>
+								</span>
+							</span><!-- /word rotator -->
+						</h1>
+						<br>
+
+						<span class="font-lato size-30 weight-300" style="float:right;">Porta massa Aliquet Suscipit Id Ratione Officia Sint </span>
+
+					</div>
+					</div>
+				</section>
+{% endblock %}
