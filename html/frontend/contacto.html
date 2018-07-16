@@ -1,0 +1,75 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block content %}
+
+<a href="https://goo.gl/maps/PWiWmU5EG3s" target="_blank"><div id="map2" class="height-300"></div></a>
+<section>
+	<div class="container">
+		<div class="row">
+			<!-- FORM -->
+			<div class="col-md-9 col-sm-9">
+				<h3>EviEnos un mensaje</h3>
+				<form action="valida.php" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='3iDXc3vhzfbOGMGMkAfIR05QjW9kGWkC6q3vivKeiLetKOW3r1E0DNoeGVuKInTS' />
+					<fieldset>
+						<div class="row">
+							<div class="form-group">
+								<div class="col-md-4">
+									<label for="contact:name">Nombre y Apellido *</label> <input type="text" name="name" maxlength="50" minlength="8" required placeholder="Nombre Completo*" class="form-control" id="id_name" />
+									<small class="text-danger"></small>
+								</div>
+								<div class="col-md-4">
+									<label for="contact:email">E-Mail *</label> <input type="email" name="email" maxlength="50" minlength="8" required placeholder="Dirección de E-Mail*" class="form-control" id="id_email" />
+									<small class="text-danger"></small>
+								</div>
+								<div class="col-md-4">
+									<label for="contact:phone">Teléfono *</label> <input type="text" name="phone" id="id_phone" minlength="7" placeholder="Teléfono" class="form-control" maxlength="30" />
+									<small class="text-danger"></small>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<div class="col-md-8">
+									<label for="contact:subject">Empresa </label> <input type="text" name="company" maxlength="50" minlength="4" required placeholder="Nombre de tu Empresa" class="form-control" id="id_company" />
+									<small class="text-danger"></small>
+								</div>
+								<div class="col-md-4">
+									<label for="contact_department">Asunto </label> <input type="text" name="subject" required placeholder="Asunto de Interés" class="form-full form-control" id="id_subject" />
+									<small class="text-danger"></small>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<div class="col-md-12">
+									<label for="contact:message">Mensaje *</label> <textarea name="content" rows="10" maxlength="2000" id="id_content" minlength="4" required placeholder="Información Adicional" cols="40" class="form-control">
+</textarea>
+									<small class="text-danger"></small>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<div class="row">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-primary"><i class="fa fa-envelope"></i> Enviar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- /FORM -->
+			<!-- INFO -->
+			<div class="col-md-3 col-sm-3">
+				<h3>Visítenos</h3>
+				<hr />
+				<p>
+					<span class="block"><strong><i class="fa fa-map-marker"></i> Dirección:</strong> Sendero de la Ladera #16 Milenio III CP 76060. Querétaro, Qro. </span>
+					<span class="block"><strong><i class="fa fa-phone"></i> Teléfono:</strong> <a>+ 52 (442) - 4554 - 213</a></span>
+					<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@altingenieria.mx">info@altingenieria.mx</a></span>
+				</p>
+				<hr />
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+{% endblock %}

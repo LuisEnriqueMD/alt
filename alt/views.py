@@ -1,4 +1,4 @@
-# -*- coding: utf-8 
+# -*- coding: utf-8
 from django.shortcuts import render
 
 #django required modules for send email
@@ -25,15 +25,41 @@ from django.contrib.staticfiles.templatetags.staticfiles import static
 def home(request):
 	Breadcrum = False
 	Active = 'home'
-	
+
 	return render(request, 'frontend/home.html', locals())
 
 def electronica(request):
 	Breadcrum = True
 	Active = 'electronica'
 	message = "Electronica"
-	
+
 	return render(request, 'frontend/electronica.html', locals())
+
+def vision(request):
+	Breadcrum = True
+	Active = 'vision'
+	message = "Visión Artificial"
+
+	return render(request, 'frontend/vision.html', locals())
+
+def termografia(request):
+	Breadcrum = True
+	Active = 'termografia'
+	message = "Termografía"
+
+	return render(request, 'frontend/termografia.html', locals())
+
+def instrumentacion(request):
+	Breadcrum = True
+	Active = 'instrumentacion'
+	message = "Instrumentación"
+
+	return render(request, 'frontend/instrumentacion.html', locals())
+	
+
+def thermogenius(request):
+
+	return render(request, 'frontend/thermogenius.html', locals())
 
 def job(request):
 	Breadcrum = True
@@ -70,15 +96,15 @@ def job(request):
 			email.send()
 			messages.success(request, 'Tu información ha sido enviada.')
 	return render(request, 'frontend/empleo.html', locals())
-	
-	
+
+
 
 
 
 def contact(request):
 	Active = 'contacto'
 	Breadcrum = True
-	message = "Mándanos un Mensaje"
+	message = "Contacte Con Nosotros"
 	active = "Contacto"
 	form_class = forms.ContactForm
 	form = form_class(request.POST or None)
@@ -111,14 +137,40 @@ def contact(request):
 def proyecto_traza(request):
 	Breadcrum = True
 	Active = 'proyectos'
-	
-	
 	return render(request, 'frontend/proyecto.html', locals())
+
+def proyecto_campana(request):
+	Breadcrum = True
+	Active = 'proyectos'
+	return render(request, 'frontend/campana_extractora.html', locals())
+
+def proyecto_monitorizacion(request):
+	Breadcrum = True
+	Active = 'proyectos'
+	return render(request, 'frontend/monitorizacion.html', locals())
+
+def proyecto_oximetro(request):
+	Breadcrum = True
+	Active = 'proyectos'
+	return render(request, 'frontend/oximetro.html', locals())
+
+def proyecto_localizador(request):
+	Breadcrum = True
+	Active = 'proyectos'
+	return render(request, 'frontend/localizador.html', locals())
+
+def proyecto_medidor(request):
+	Breadcrum = True
+	Active = 'proyectos'
+	return render(request, 'frontend/medidor.html', locals())
 
 def proyectos(request):
 	Breadcrum = True
 	Active = 'proyectos'
 	message = "Nuestros Proyectos"
-	
-	
 	return render(request, 'frontend/proyectos.html', locals())
+
+def proyecto_ditek(request):
+	Breadcrum = True
+	Active = 'proyectos'
+	return render(request, 'frontend/ditek.html', locals())

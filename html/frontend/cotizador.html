@@ -1,0 +1,482 @@
+{% extends 'base.html' %} {% load staticfiles %} 
+{% block head %}
+        <meta charset="utf-8">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>/*custom font*/
+        @import url(http://fonts.googleapis.com/css?family=Montserrat);
+        /*basic reset*/
+        * {margin: 0; padding: 0;}
+        
+        /*form styles*/
+        #msform {
+            /*width: 1050px;*/
+            width:90%;
+            height: 650px;
+            margin: 100px auto;
+            text-align: center;
+            position: relative;
+        }
+        #msform fieldset {
+            background: white;
+            border: 0 none;
+            border-radius: 3px;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+            padding: 30px 30px;
+    
+            box-sizing: border-box;
+            width: 105%;
+            margin: 0 -5%;
+    
+            /*stacking fieldsets above each other*/
+            position: absolute;
+        }
+        /*Hide all except first fieldset*/
+        #msform fieldset:not(:first-of-type) {
+            display: none;
+        }
+        /*inputs*/
+        #msform input, #msform textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: montserrat;
+            color: #2C3E50;
+            font-size: 13px;
+        }
+        /*buttons*/
+        #msform .action-button {
+            width: 100px;
+            background: #205081;
+            font-weight: bold;
+            color: white;
+            border: 0 none;
+            border-radius: 1px;
+            cursor: pointer;
+            padding: 10px 5px;
+            margin: 10px 5px;
+        }
+        #msform .action-button:hover, #msform .action-button:focus {
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #205081;
+        }
+        /*headings*/
+        .fs-title {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+        .fs-subtitle {
+            font-weight: normal;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .boton{
+            width:100px;
+        }
+        /*progressbar*/
+        #progressbar {
+            margin-bottom: 30px;
+            overflow: hidden;
+            /*CSS counters to number the steps*/
+            counter-reset: step;
+        }
+        #progressbar li {
+            list-style-type: none;
+            color: black;
+            text-transform: uppercase;
+            font-size: 9px;
+            width: 12%;
+            float: left;
+            position: relative;
+        }
+        #progressbar li:before {
+            content: counter(step);
+            counter-increment: step;
+            width: 15px;
+            line-height: 20px;
+            display: block;
+            font-size: 9px;
+            color: #333;
+            background: white;
+            border-radius: 3px;
+            margin: 0 auto 5px auto;
+        }
+        /*progressbar connectors*/
+        #progressbar li:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: white;
+            position: absolute;
+            left: -50%;
+            top: 9px;
+            z-index: -1; /*put it behind the numbers*/
+        }
+        #progressbar li:first-child:after {
+            /*connector not needed before the first step*/
+            content: none;
+        }
+        /*marking active/completed steps green*/
+        /*The number of the step and the connector before it = green*/
+        #progressbar li.active:before,  #progressbar li.active:after{
+            background: #205081;
+            color: white;
+        }
+        ul {list-style:none}</style>
+{% endblock %}
+{% block content %}
+        <section>
+        <div class="container">
+        <div class="row" style="margin-left:15px; margin-right:15px;">
+        <!-- multistep form -->
+        <div class="row">
+                <div class="col-md-4">
+                        <div class="toggle-transparent toggle-bordered-full clearfix">
+                            <div class="toggle active">
+                                <div class="toggle-content" style="display: block;">
+                                    <hr>
+                                    <span class="clearfix">
+                                    <strong class="float-left">Resumen de Selección:</strong>
+                                </span>
+                                <hr>
+                            <span class="clearfix">
+                                <span class="float-right" id="no_cameras">Sin Selección</span>
+                                <span class="float-left">No. de Cámaras:</span>
+                            </span>
+                            <span class="clearfix">
+                                <span class="float-right" id="comunication">Sin Selección</span>
+                                <span class="float-left">Comunicación</span>
+                            </span>
+                            <span class="clearfix">
+                                <span class="float-right" id="net">Sin Selección</span>
+                                <span class="float-left">Tipo de Red</span>
+                            </span>
+                            <span class="clearfix">
+                                <span class="float-right" id="no_analog">Sin Selección</span>
+                                <span class="float-left">Salidas Analógicas</span>
+                            </span>
+                            <span class="clearfix">
+                                <span class="float-right" id="no_digital">Sin Selección</span>
+                                <span class="float-left">Salidas Digitales</span>
+                            </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            <div class="col-md-8">
+            <form onsubmit="post_invoice(); return false;" id="msform" style="margin: 0 auto; display: block;" novalidate="novalidate">
+            <!-- progressbar -->
+            
+            <ul id="progressbar">
+                
+                <li class="active"><span class="textli">Número de Cámaras</span></li>
+                <li><span class="textli">Comunicación con PLC Ethernet</span></li>
+                <li><span class="textli">Red Local</span></li>
+                <li><span class="textli">Salidas Analógicas</span></li>
+                <li><span class="textli">Salidas Digitales</span></li>
+                <li><span class="textli">Resultados</span></li>
+            </ul>
+
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Número de Cámaras</h2>
+                <h3 class="fs-subtitle">Por favor marque el número de cámaras</h3>
+                <div class="row">
+                <div class="form-group">
+                    <div class="col-sm-12">                          
+                        <label>Número de Cámaras</label>
+                        {{form.cameras}}                      
+                    </div>
+                </div>
+                </div>
+                <input type="button" id="btnext" name="next" class="next action-button" value="Siguiente">
+                
+            </fieldset>
+        
+            <fieldset>
+                <h2 class="fs-title">Comunicación con PLC Ethernet</h2>
+                <h3 class="fs-subtitle">¿Cuenta con este tipo de comunicación?</h3>
+                <div class="form-group">
+                        <div class="col-sm-12">
+                             {{form.comunications}}
+                        </div> 
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="Anterior" style="margin:25px 5px;">
+                <input type="button" name="next" class="next action-button" value="Siguiente">
+            </fieldset>
+        
+            <fieldset>
+                <h2 class="fs-title">Red Local</h2>
+                <h3 class="fs-subtitle">¿Con que tipo de red cuenta?</h3>
+                <div class="form-group">     
+                        <div class="col-sm-12">
+                            {{form.nets}}
+                        </div>           
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="Anterior" style="margin:25px 5px;">
+                <input type="button" name="next" class="next action-button" value="Siguiente">
+        
+            </fieldset>
+        
+            <fieldset>
+                <h2 class="fs-title">Salidas Analógicas</h2>
+                
+                <div class="form-group">
+                        <div class="col-sm-12">
+                            {{form.analog_out}}
+                        </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="Anterior" style="margin:25px 5px;">
+                <input type="button" name="next" class="next action-button" value="Siguiente">
+        
+            </fieldset>
+        
+            <fieldset>
+                    <h2 class="fs-title">Salidas Digitales</h2>
+                    
+            							
+                    <div class="form-group">
+                            <div class="col-sm-12">
+                                {{form.digital_out}}
+                            </div>
+                    </div>
+                    
+                    <input type="button" name="previous" class="previous action-button" value="Anterior" style="margin:25px 5px;">
+                    <input type="submit" name="next" class="cot action-button" value="Cotizar" >
+                </fieldset>
+				
+                <fieldset>
+                        <h2 class="fs-title">Resultados</h2>
+                        
+                        <div class="form-group">
+                               <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <label>Nombre del Producto</label><p id="id_product_name"></p>
+                                    <label>Descripción</label><p id="id_product_description"></p>
+                                    <label>Precio</label><p id="id_product_price"></p>
+									<label>Especificaciones</label><p id="id_product_especification"></p>
+									</div>
+									<div class="col-md-6 col-sm-12 col-xs-12">
+                                    <img id="id_product_image" src=""/ width="100%" height="100%">
+									</div>
+                        			<input type="button" name="reaload" class="action-button" onclick="document.location.reload();" value="Cotizar Otro" style="margin:25px 5px;">
+                                </div>                        
+                    </fieldset>
+                    
+                    <input type="hidden" name="is_ajax" value="true">
+                    <script type="text/javascript">
+                        $(window).resize(function() {
+                        /*$('#msform').width($( window ).width());*/
+                        if ($(window).width() < 568){
+                            $('.textli').hide();
+                        }
+                        if ($(window).width() > 568){
+                            $('.textli').show();
+                        }
+                        //console.log($( window ).width());
+                    });
+                    </script>
+                </form>
+            </div>
+            
+            </div>
+        </div>
+        </div>
+    </section>
+        <script type="text/javascript">var plugin_path = '/static/assets/plugins/';</script>
+        <a href="#" id="toTop" style="display: inline;"></a>
+        <script type="text/javascript">
+        //jQuery time
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
+
+        $(".next").click(function(){
+            if(animating) return false;
+                    animating = true;             
+                    current_fs = $(this).parent();
+                    next_fs = $(this).parent().next();
+                    //activate next step on progressbar using the index of next_fs
+                    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+                
+                    //show the next fieldset
+                    next_fs.show();
+                    //hide the current fieldset with style
+                    current_fs.animate({opacity: 0}, {
+                        step: function(now, mx) {
+                            //as the opacity of current_fs reduces to 0 - stored in "now"
+                            //1. scale current_fs down to 80%
+                            scale = 1 - (1 - now) * 0.2;
+                            //2. bring next_fs from the right(50%)
+                            left = (now * 50)+"%";
+                            //3. increase opacity of next_fs to 1 as it moves in
+                            opacity = 1 - now;
+                            current_fs.css({'transform': 'scale('+scale+')'});
+                            next_fs.css({'left': left, 'opacity': opacity});
+                        },
+                        duration: 800,
+                        complete: function(){
+                            current_fs.hide();
+                            animating = false;
+                        },
+                        //this comes from the custom easing plugin
+                        easing: 'easeInOutBack'
+                    });
+            });
+                    $(".previous").click(function(){
+                        if(animating) return false;
+                        animating = true;
+                        current_fs = $(this).parent();
+                        previous_fs = $(this).parent().prev();
+                        //de-activate current step on progressbar
+                        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+                        //show the previous fieldset
+                        previous_fs.show();
+                        //hide the current fieldset with style
+                        current_fs.animate({opacity: 0}, {
+                            step: function(now, mx) {
+                                //as the opacity of current_fs reduces to 0 - stored in "now"
+                                //1. scale previous_fs from 80% to 100%
+                                scale = 0.8 + (1 - now) * 0.2;
+                                //2. take current_fs to the right(50%) - from 0%
+                                left = ((1-now) * 50)+"%";
+                                //3. increase opacity of previous_fs to 1 as it moves in
+                                opacity = 1 - now;
+                                current_fs.css({'left': left});
+                                previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+                            },
+                            duration: 800,
+                            complete: function(){
+                                current_fs.hide();
+                                animating = false;
+                            },
+                            //this comes from the custom easing plugin
+                            easing: 'easeInOutBack'
+                        
+                        });
+                });
+            $(".cot").click(function(){
+                var cameras = $('#no_cameras').text();
+                var comunication = $('#comunication').text();
+                var net = $('#net').text();
+                var analog = $('#no_analog').text();
+                var digital = $('#no_digital').text();
+                if (cameras == 'Sin Selección'|| comunication == 'Sin Selección' ||net == 'Sin Selección' || analog == 'Sin Selección' ||digital == 'Sin Selección'){
+                    alert('Faltan datos por seleccionar');
+                }
+                else{
+                    if(animating) return false;
+                    animating = true;             
+                    current_fs = $(this).parent();
+                    next_fs = $(this).parent().next();
+                    //activate next step on progressbar using the index of next_fs
+                    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+                
+                    //show the next fieldset
+                    next_fs.show();
+                    //hide the current fieldset with style
+                    current_fs.animate({opacity: 0}, {
+                        step: function(now, mx) {
+                            //as the opacity of current_fs reduces to 0 - stored in "now"
+                            //1. scale current_fs down to 80%
+                            scale = 1 - (1 - now) * 0.2;
+                            //2. bring next_fs from the right(50%)
+                            left = (now * 50)+"%";
+                            //3. increase opacity of next_fs to 1 as it moves in
+                            opacity = 1 - now;
+                            current_fs.css({'transform': 'scale('+scale+')'});
+                            next_fs.css({'left': left, 'opacity': opacity});
+                        },
+                        duration: 800,
+                        complete: function(){
+                            current_fs.hide();
+                            animating = false;
+                        },
+                        //this comes from the custom easing plugin
+                        easing: 'easeInOutBack'
+                    });  
+                    }
+            });        
+        
+        $(".submit").click(function(){
+            return false;
+        })
+        
+        
+        </script>
+        <!--Cotizador-->
+<script>
+	function post_invoice() {
+				$.ajax({
+					method: "POST",
+					url: "{% url 'get.cotizador'%}",
+					data:{
+						csrfmiddlewaretoken:"{{ csrf_token }}",
+						{% for field in form%}
+							{{field.name}}:$('#{{field.auto_id}}').val(),
+						{%endfor%}
+					}
+				}).done(function(data){
+					
+					if (data.to_json.success=='success'){
+						for (var k=0; k<data.data_dict.length; k++){
+							var form_id = data.data_dict[k].form_id;
+							var form_value = data.data_dict[k].form_value;
+							console.log(form_id);
+							console.log(form_value);
+							if (form_id=='id_product_image'){
+								$('#'+form_id).attr('src', form_value);
+							}
+							$('#'+form_id).html(form_value);
+						}
+					}
+					else{
+						alert('Error al procesar Información');
+					}
+				});
+	}
+</script>
+<script>
+        $(document).ready(function() {
+            $('#id_cameras').change(function(event) {
+                if($('#id_cameras option:selected').val() == '0'){
+                    alert('Selecciona Una Opción Válida');}
+                else{
+                    $('#no_cameras').html($('#id_cameras option:selected').text());}    
+            });
+            $('#id_comunications').change(function(event) {
+                if($('#id_comunications option:selected').val() == '0'){
+                    alert('Selecciona Una Opción Válida');}
+                else{
+                    $('#comunication').html($('#id_comunications option:selected').text());}
+            });
+            $('#id_nets').change(function(event) {
+                if($('#id_nets option:selected').val() == '0'){
+                    alert('Selecciona Una Opción Válida');}
+                else{
+                $('#net').html($('#id_nets option:selected').text());}
+            });
+            $('#id_analog_out').change(function(event) {
+                if($('#id_analog_out option:selected').val() == '1'){
+                    alert('Selecciona Una Opción Válida');}
+                else{
+                    $('#no_analog').html($('#id_analog_out option:selected').text());}
+            });
+            $('#id_digital_out').change(function(event) {
+                if($('#id_digital_out option:selected').val() == '0'){
+                    alert('Selecciona Una Opción Válida');}
+                else{
+                    $('#no_digital').html($('#id_digital_out option:selected').text());}
+            });
+            
+            
+        });
+</script>
+
+{% endblock %}

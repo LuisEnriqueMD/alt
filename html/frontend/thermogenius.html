@@ -1,0 +1,1085 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block content %}
+	<section class="h-500" id="slider" style="background:url('http://www.flir.com.mx//uploadedImages/Automation/heroBkgd_automation.jpg')">
+		<div class="overlay dark-6"><!-- dark overlay [0 to 9 opacity] --></div>
+		
+		<div class="display-table">
+			<div class="display-table-cell vertical-align-middle">
+				
+				<div class="container text-center">
+					
+					<h1 class="m-0 wow fadeInUp" data-wow-delay="0.4s">
+					THERMOGENIUS
+					<!--
+						TEXT ROTATOR
+						data-animation="fade|flip|flipCube|flipUp|spin"
+					-->
+					<span class="rotate " data-animation="fade" data-speed="1500">
+						POTENCIA, SEGURIDAD, VERSATILIDAD
+					</span>
+					</h1>
+					<p class="lead font-lato fs-30 wow fadeInUp animated" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+						Más de <span class="countTo" data-speed="4000">550</span> datos de transferencia
+						<span class="theme-color fw-400 font-style-italic">Termodinámica</span> en progreso
+					</p>
+					
+					<a class="btn btn-default btn-lg" href="/cotizador">Cotizador</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-bar info-bar-dark"  style="background: #182353 !important">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<i class="glyphicon glyphicon-globe"></i>
+					<h3 align="right">Solución integral multicámara</h3>
+					
+				</div>
+				<div class="col-sm-3">
+					<i class="glyphicon glyphicon-cog"></i>
+					<h3 align="right" >Herramientas avanzadas de configuración</h3>
+					
+				</div>
+				<div class="col-sm-3">
+					<i class="glyphicon glyphicon-edit"></i>
+					<h3 align="right" >Interfaz potente y versátil</h3>
+					
+				</div>
+				<div class="col-sm-3">
+					<i class="glyphicon glyphicon-th-large"></i>
+					<h3 align="right" >Funcionamiento individual o integrado</h3>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<header class="text-center">
+				<h2 class="nomargin">ThermoGenius</h2>
+				<p class="font-lato size-20 nomargin">Sistema integral de inspección termográfica</p>
+			</header>
+			
+			<hr />
+			<div class="row margin-top-80">
+				<div class="col-lg-4 col-md-4 col-md-push-4 text-center">
+					
+					<img class="img-responsive" src="http://theme.stepofweb.com/Smarty/v2.2.1/HTML_BS4/demo_files/images/iphone-min.png" alt="" />
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-md-pull-4">
+					<div class="box-icon box-icon-right">
+						<a class="box-icon-title" href="#">
+							<i class="fa fa-eye"></i>
+							<h2>Múltiples Combinaciones</h2>
+						</a>
+						<p>Soporta una combinación de modelos de cámaras FLIR Ax5, A300, A315 y A615.</p>
+					</div>
+					<div class="box-icon box-icon-right">
+						<a class="box-icon-title" href="#">
+							<i class="fa fa-check"></i>
+							<h2>Alertas físicas y digitales</h2>
+						</a>
+						<p>Activación automática de alertas con salidas digitales físicas y envío de e-mail..</p>
+					</div>
+					<div class="box-icon box-icon-right">
+						<a class="box-icon-title" href="#">
+							<i class="fa fa-rocket"></i>
+							<h2>Configuraciones Personalizadas</h2>
+						</a>
+						<p>Herramientas avanzadas de configuración y condición de alertas.</p>
+					</div>
+					<div class="box-icon box-icon-right">
+						<a class="box-icon-title" href="#">
+							<i class="fa fa-flash"></i>
+							<h2>Interfaz Gráfica</h2>
+						</a>
+						<p>Interfaz con paneles móviles para ajustar el tamaño de la gráfica e imagen.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="box-icon box-icon-left">
+						<a class="box-icon-title" href="#">
+							<i class="fa fa-tablet"></i>
+							<h2>Gestor de recetas.</h2>
+						</a>
+						<p>Para un control automatizado y mejoramiento de los procesos</p>
+					</div>
+					<div class="box-icon box-icon-left">
+						<a class="box-icon-title" href="#">
+							<i class="fa fa-random"></i>
+							<h2>Gráficas e imágenes</h2>
+						</a>
+						<p>Gráfica completa de evolución temporal de la temperatura, almacenamiento de imágenes y registro en base de datos en tiempo real.</p>
+					</div>
+					<div class="box-icon box-icon-left">
+						<a class="box-icon-title" href="#">
+							<i class="fa fa-tint"></i>
+							<h2>Comunicacion</h2>
+						</a>
+						<p>Posibilidad de integración con otros dispositivos como PLCS entre otros</p>
+					</div>
+					<div class="box-icon box-icon-left">
+						<a class="box-icon-title" href="#">
+							<i class="fa fa-cogs"></i>
+							<h2>Producto integral</h2>
+						</a>
+						<p>Una sinergia completa entre lo que es hardware y software en la solocion de problemas industriales mediante la termografía como aplicacion principal</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="text-center" style="margin-top: 40px;">
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				Conoce Más
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="callout-dark heading-title heading-arrow-bottom">
+		<div class="container">
+			<div class="text-center">
+				<h3 class="fs-30">Hardware utilizado</h3>
+				<p>Utilizamos lo mejor que existe en el mercado para la fabricación de nuestro hardware</p>
+			</div>
+		</div>
+	</section>
+	<section class="p-0">
+		
+		<div class="row m-0">
+			
+			<!-- LEFT -->
+			<div class="col-md-6 col-sm-6 p-0 m-0">
+				<img class="img-fluid" src="{% static 'media/alt/hardware.png' %}" alt="image">
+			</div>
+			<!-- RIGHT -->
+			<div class="col-md-6 col-sm-6 p-0 m-0">
+				<div class="p-40">
+					<h2>Multipurpose Unlimited Options</h2>
+					
+					<p class="font-lato fs-18">
+						Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+					<div class="row mt-60">
+						<ul class="shop-item-list row list-inline m-0">
+							<!-- ITEM -->
+							<li class="col-md-4">
+								<div class="shop-item">
+									<div class="thumbnail noborder nopadding">
+										<!-- product image(s) -->
+										<a class="shop-item-image" href="shop-single-left.html">
+											<img class="img-responsive text-center" src="{% static 'media/alt/M3.png' %}" alt="" />
+										</a>
+										<!-- /product image(s) -->
+										<!-- hover buttons -->
+										<div class="shop-option-over">
+											<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus size-18"></i></a>
+										</div>
+										<!-- /hover buttons -->
+									</div>
+									
+									<div class="shop-item-summary text-center">
+										<h2 class="size-14">Modelo S</h2>
+										
+										<!-- rating -->
+										<div class="shop-item-rating-line">
+											<div class="rating rating-4 size-11"><!-- rating-0 ... rating-5 --></div>
+										</div>
+										<!-- /rating -->
+
+									</div>
+								</div>
+							</li>
+							<!-- /ITEM -->
+							<!-- ITEM -->
+							<li class="col-md-4">
+								<div class="shop-item">
+									<div class="thumbnail b-0 p-0">
+										<!-- product image(s) -->
+										<a class="shop-item-image" href="shop-single-left.html">
+											<img class="img-fluid" src="{% static 'media/alt/M3.png' %}" alt="">
+										</a>
+										<!-- /product image(s) -->
+										<!-- hover buttons -->
+										<div class="shop-option-over">
+											<a class="btn btn-light" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+										</div>
+										<!-- /hover buttons -->
+									</div>
+									
+									<div class="shop-item-summary text-center">
+										<h2 class="fs-14">Modelo M</h2>
+										
+										<!-- rating -->
+										<div class="shop-item-rating-line">
+											<div class="rating rating-4 fs-11"><!-- rating-0 ... rating-5 --></div>
+										</div>
+										<!-- /rating -->
+										<div class="text-center" style="margin-top: 25px;">
+											<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+											Compara las Fichas Técnicas
+											</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- /ITEM -->
+							<!-- ITEM -->
+							<li class="col-md-4">
+								<div class="shop-item">
+									<div class="thumbnail b-0 p-0">
+										<!-- product image(s) -->
+										<a class="shop-item-image" href="shop-single-left.html">
+											<img class="img-fluid" src="{% static 'media/alt/M3.png' %}" alt="">
+										</a>
+										<!-- /product image(s) -->
+										<!-- hover buttons -->
+										<div class="shop-option-over">
+											<a class="btn btn-light" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+										</div>
+										<!-- /hover buttons -->
+									</div>
+									
+									<div class="shop-item-summary text-center">
+										<h2 class="fs-14">Modelo L</h2>
+										
+										<!-- rating -->
+										<div class="shop-item-rating-line">
+											<div class="rating rating-4 fs-11"><!-- rating-0 ... rating-5 --></div>
+										</div>
+										<!-- /rating -->
+										<div class="text-center" style="margin-top: 25px;">
+
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- /ITEM -->
+						</ul>
+						<!-- /ITEM -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	{% comment %}
+	<section>
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-5 col-sm-5">
+					<div class="thumbnail">
+						<!--
+							IMAGE ZOOM
+							
+							data-mode="mouseover|grab|click|toggle"
+						-->
+						<figure id="zoom-primary" class="zoom" data-mode="mouseover">
+							<!--
+								zoom buttton
+								
+								positions available:
+									.bottom-right
+									.bottom-left
+									.top-right
+									.top-left
+							-->
+							<a class="lightbox bottom-right" href="{% static 'media/alt/software.png' %}" data-plugin-options='{"type":"image"}'>
+								<i class="glyphicon glyphicon-search"></i>
+							</a>
+							<!--
+								image
+								Extra: add .image-bw class to force black and white!
+							-->
+							<img class="img-responsive" src="{% static 'media/alt/software.png' %}" width="1200" height="1500" alt="" />
+						</figure>
+					</div>
+					<!--
+						Thumbnails (required height:100px)
+						
+						data-for = figure image id match
+					-->
+					<div data-for="zoom-primary" class="zoom-more owl-carousel owl-padding-3 featured" data-plugin-options='{"singleItem": false, "autoPlay": false, "navigation": true, "pagination": false}'>
+						<a class="thumbnail active" href="{% static 'media/alt/software.png' %}">
+							<img src="{% static 'media/alt/software.png' %}" height="100" alt="" />
+						</a>
+						<a class="thumbnail" href="{% static 'media/alt/software2.png' %}">
+							<img src="{% static 'media/alt/software2.png' %}" height="100" alt="" />
+						</a>
+						<a class="thumbnail" href="{% static 'media/alt/soft1.jpeg' %}">
+							<img src="{% static 'media/alt/soft1.jpeg' %}" height="100" alt="" />
+						</a>
+						<a class="thumbnail" href="{% static 'media/alt/software3.jpg' %}">
+							<img src="{% static 'media/alt/software3.jpg' %}" height="100" alt="" />
+						</a>
+						<a class="thumbnail" href="{% static 'media/alt/software4.jpg' %}">
+							<img src="{% static 'media/alt/software4.jpg' %}" height="100" alt="" />
+						</a>
+						<a class="thumbnail" href="{% static 'media/alt/software5.jpg' %}">
+							<img src="{% static 'media/alt/software5.jpg' %}" height="100" alt="" />
+						</a>
+						<a class="thumbnail" href="{% static 'media/alt/soft1.jpeg' %}">
+							<img src="{% static 'media/alt/soft1.jpeg' %}" height="100" alt="" />
+						</a>
+					</div>
+					<!-- /Thumbnails -->
+				</div>
+				<div class="col-md-7 col-sm-7">
+					<header class="margin-bottom-60">
+						<h2>Software Avanzado de Inspección Termográfica</h2>
+					</header>
+					<div class="toggle toggle-transparent toggle-bordered-full">
+						<div class="toggle active">
+							<label>Configurar de la imagen</label>
+							<div class="toggle-content">
+								<p>Control total de la visualización. El usuario puede
+									cambiar la paleta de color, el color de los ROIs y
+									establecer los rangos de temperatura
+									Automático o Manual para la representación de
+								la imagen termográfica.</p>
+							</div>
+						</div>
+						<div class="toggle active">
+							<label>Regiones de interés personalizables</label>
+							<div class="toggle-content">
+								<p>El software permite crear múltiples regiones de
+									interés (ROI) de cualquier forma y tamaño para
+									cada cámara. Dentro de estas regiones se
+									puede analizar el valor de la temperatura
+								mínima, máxima y promedio</p>
+							</div>
+						</div>
+						<div class="toggle active">
+							<label>Parámetros de Objeto</label>
+							<div class="toggle-content">
+								<p>Para una mejor precisión en la medida el usuario
+									puede ajustar los valores de emisividad,
+									temperatura ambiente, atmosférica, reflejada y
+									distancia al objeto, humedad relativa,
+								temperatura y transmitancia de la lente externa.</p>
+							</div>
+						</div>
+						<div class="toggle active">
+							<label>Ajustes de Alarma</label>
+							<div class="toggle-content">
+								<p>Creación versátil de criterios de alarma
+									individualmente para cada ROI. Además, se
+									puede asignar una salida analógica o digital a
+									cada región de interés permitiendo avisar o
+									actuar directamente sobre el objeto que se está
+								monitoreando.</p>
+							</div>
+						</div>
+						<div class="toggle active">
+							<label>Trazabilidad</label>
+							<div class="toggle-content">
+								<p>Se puede registrar todos los valores de
+									temperaturas de cada región de la imagen y
+									niveles de alarma en base de datos. Permite
+								además el guardado de imágenes en disco.</p>
+							</div>
+						</div>
+						<div class="toggle active">
+							<label>Gráfica</label>
+							<div class="toggle-content">
+								<p>Se puede graficar a tiempo real las
+									temperaturas deseadas de distintas cámaras
+								simultáneamente</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% endcomment %}
+<section>
+				<div class="container">
+
+					<div class="row">
+					
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<figure class="mb-20">
+								<img class="img-fluid" src="{% static 'media/alt/software.png' %}" alt="service" style="height:300px;">
+							</figure>
+
+							<h4 class="mb-0">Configurar de la imagen</h4>
+							
+							<p class="text-muted fs-14">Control total de la visualización. El usuario puede
+									cambiar la paleta de color, el color de los ROIs y
+									establecer los rangos de temperatura
+									Automático o Manual para la representación de
+								la imagen termográfica.</p>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<figure class="mb-20">
+								<img class="img-fluid" src="{% static 'media/alt/software2.png' %}" alt="service" style="height:300px;">
+							</figure>
+
+							<h4 class="mb-0">Regiones de interés personalizables</h4>
+				
+							<p class="text-muted fs-14">El software permite crear múltiples regiones de
+									interés (ROI) de cualquier forma y tamaño para
+									cada cámara. Dentro de estas regiones se
+									puede analizar el valor de la temperatura
+								mínima, máxima y promedio</p>
+							
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<figure class="mb-20">
+								<img class="img-fluid" src="{% static 'media/alt/soft1.jpeg' %}" alt="service" style="height:300px;">
+							</figure>
+
+							<h4 class="mb-0">Parámetros de Objeto</h4>
+							<p class="text-muted fs-14">Para una mejor precisión en la medida el usuario
+									puede ajustar los valores de emisividad,
+									temperatura ambiente, atmosférica, reflejada y
+									distancia al objeto, humedad relativa,
+								temperatura y transmitancia de la lente externa.</p>
+						</div>
+
+					</div>
+					<div class="row" style="margin-top:45px;">
+					
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<figure class="mb-20">
+								<img class="img-fluid" src="{% static 'media/alt/software.png' %}" alt="service" style="height:300px;">
+							</figure>
+
+							<h4 class="mb-0">Ajustes de Alarma</h4>
+							
+							<p class="text-muted fs-14">Creación versátil de criterios de alarma
+									individualmente para cada ROI. Además, se
+									puede asignar una salida analógica o digital a
+									cada región de interés permitiendo avisar o
+									actuar directamente sobre el objeto que se está
+								monitoreando.</p>
+
+
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<figure class="mb-20">
+								<img class="img-fluid" src="{% static 'media/alt/software2.png' %}" alt="service" style="height:300px;">
+							</figure>
+
+							<h4 class="mb-0">Trazabilidad</h4>
+							<p class="text-muted fs-14">Se puede registrar todos los valores de
+									temperaturas de cada región de la imagen y
+									niveles de alarma en base de datos. Permite
+								además el guardado de imágenes en disco.</p>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<figure class="mb-20">
+								<img class="img-fluid" src="{% static 'media/alt/soft1.jpeg' %}" alt="service" style="height:300px;">
+							</figure>
+
+							<h4 class="mb-0">Gráfica</h4>
+							
+							<p class="text-muted fs-14">Se puede graficar a tiempo real las
+									temperaturas deseadas de distintas cámaras
+								simultáneamente</p>
+
+		
+						</div>
+
+					
+
+				</div>
+			</section>
+	{% comment %}
+	<div class="callout callout-theme-color">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9"><!-- title + shortdesc -->
+				<h3>¿Estás interesado en el producto?</h3>
+				<p>Solicita una cotización ahora</p>
+			</div>
+			<div class="col-md-3"><!-- button -->
+			<a href="page-careers.html" class="btn btn-primary btn-lg">Contáctanos</a>
+		</div>
+	</div>
+</div>
+</div>
+{% endcomment %}
+<!-- / -->
+<section>
+<div class="container">
+			<header class="text-center" style="margin-bottom:30px;">
+				<h2 class="nomargin">Cámaras</h2>
+				<p class="font-lato size-20 nomargin">Nuestra gama de cámaras selectas de Flir</p>
+			</header>
+	
+	<!-- COMPARE TABLE -->
+	<div class="table-responsive">
+		<table class="shop-compare table table-bordered">
+			<tbody>
+				<!-- IMAGE -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Cámaras</td>
+					
+					<!-- image product 1 -->
+					<td class="text-center">
+						<a class="shop-compare-item" href="shop-single-left.html">
+							<img class="img-fluid" src="{% static 'media/alt/A15.jpg' %}" alt="shop first image">
+							Flir A15
+						</a>
+					</td>
+					
+					<!-- image product 2 -->
+					<td class="text-center">
+						<a class="shop-compare-item" href="shop-single-left.html">
+							<img class="img-fluid" src="{% static 'media/alt/A35.jpg' %}" alt="shop first image">
+							FLir A35
+						</a>
+					</td>
+					<!-- image product 3 -->
+					<td class="text-center">
+						<a class="shop-compare-item" href="shop-single-left.html">
+							<img class="img-fluid" src="{% static 'media/alt/A35.jpg' %}" alt="shop first image">
+							Flir A65
+						</a>
+					</td>
+
+				</tr>
+				<!-- PRICE -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Resolución</td>
+					
+					<!-- price product 1 -->
+					<td class="text-center fs-20">160 x 128</td>
+					
+					<!-- price product 2 -->
+					<td class="text-center fs-20">320 x 256</td>
+					<!-- price product 3 -->
+					<td class="text-center fs-20">640 x 512</td>
+				</tr>
+				<!-- AVAILABILITY -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Rango de Temperatura</td>
+					
+					<!-- avail. product 1 -->
+					<td class="text-center">
+						<ul class="list-unstyled">
+							<li><i></i> -25°C - 135°C</li>
+							<li><i></i> -40°C - 550°C</li>
+
+						</ul>
+					</td>
+					
+					<!-- avail. product 2 -->
+					<td class="text-center">
+						<ul class="list-unstyled">
+							<li><i></i> -25°C - 135°C</li>
+							<li><i></i> -40°C - 550°C</li>
+
+						</ul>
+					</td>
+					<!-- avail. product 3 -->
+					<td class="text-center">
+						<ul class="list-unstyled">
+							<li><i></i> -25°C - 135°C</li>
+							<li><i></i> -40°C - 550°C</li>
+
+						</ul>
+					</td>
+				</tr>
+				<!-- RATING -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Presición</td>
+					
+					<!-- rating product 1 -->
+					<td class="text-center">
+						+/-5°C
+					</td>
+					
+					<!-- RATING product 2 -->
+					<td class="text-center">
+						+/-5°C
+					</td>
+					<!-- RATING product 3 -->
+					<td class="text-center">
+						+/-5°C
+					</td>
+				</tr>
+				<!-- SPECIFICATIONS -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Enfoque</td>
+					
+					<!-- specs product 1 -->
+					<td class="text-center">
+						Manual
+					</td>
+					
+					<!-- specs product 2 -->
+					<td class="text-center">
+						Manual
+					</td>
+					<!-- specs product 3 -->
+					<td class="text-center">
+						Manual
+					</td>
+				</tr>
+				<!-- COLOR -->
+
+
+			</tbody>
+		</table>
+	</div>
+	<!-- /COMPARE TABLE -->
+	<div class="table-responsive">
+		<table class="shop-compare table table-bordered">
+			<tbody>
+				<!-- IMAGE -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Cámaras</td>
+					
+					<!-- image product 1 -->
+					<td class="text-center">
+						<a class="shop-compare-item" href="shop-single-left.html">
+							<img class="img-fluid" src="{% static 'media/alt/A15.jpg' %}" alt="shop first image">
+							Flir A310
+						</a>
+					</td>
+					
+					<!-- image product 2 -->
+					<td class="text-center">
+						<a class="shop-compare-item" href="shop-single-left.html">
+							<img class="img-fluid" src="{% static 'media/alt/A35.jpg' %}" alt="shop first image">
+							FLir A315
+						</a>
+					</td>
+					<!-- image product 3 -->
+					<td class="text-center">
+						<a class="shop-compare-item" href="shop-single-left.html">
+							<img class="img-fluid" src="{% static 'media/alt/A35.jpg' %}" alt="shop first image">
+							Flir A6515
+						</a>
+					</td>
+
+				</tr>
+				<!-- PRICE -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Resolución</td>
+					
+					<!-- price product 1 -->
+					<td class="text-center fs-20">320 x 240</td>
+					
+					<!-- price product 2 -->
+					<td class="text-center fs-20">320 x 240</td>
+					<!-- price product 3 -->
+					<td class="text-center fs-20">640 x 480</td>
+				</tr>
+				<!-- AVAILABILITY -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Rango de Temperatura</td>
+					
+					<!-- avail. product 1 -->
+					<td class="text-center">
+						<ul class="list-unstyled">
+							<li><i></i> -20°C - 120°C</li>
+							<li><i></i> 0°C - 350°C</li>
+
+						</ul>
+					</td>
+					
+					<!-- avail. product 2 -->
+					<td class="text-center">
+						<ul class="list-unstyled">
+							<li><i></i> -20°C - 120°C</li>
+							<li><i></i>   0°C - 350°C</li>
+
+						</ul>
+					</td>
+					<!-- avail. product 3 -->
+					<td class="text-center">
+						<ul class="list-unstyled">
+							<li><i></i> -20°C - 150°C</li>
+							<li><i></i>  100°C - 650°C</li>
+							<li><i></i>  300°C - 2000°C</li>
+
+						</ul>
+					</td>
+				</tr>
+				<!-- RATING -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Presición</td>
+					
+					<!-- rating product 1 -->
+					<td class="text-center">
+						+/-2°C
+					</td>
+					
+					<!-- RATING product 2 -->
+					<td class="text-center">
+						+/-2°C
+					</td>
+					<!-- RATING product 3 -->
+					<td class="text-center">
+						+/-2°C
+					</td>
+				</tr>
+				<!-- SPECIFICATIONS -->
+				<tr>
+					<!-- title -->
+					<td class="text-right shop-compare-title">Enfoque</td>
+					
+					<!-- specs product 1 -->
+					<td class="text-center">
+						Motorizado
+					</td>
+					
+					<!-- specs product 2 -->
+					<td class="text-center">
+						Motorizado
+					</td>
+					<!-- specs product 3 -->
+					<td class="text-center">
+						Motorizado
+					</td>
+				</tr>
+				<!-- COLOR -->
+
+				<!-- ADD TO CART -->
+
+			</tbody>
+		</table>
+	</div>
+	
+</div>
+</section>
+<section class="parallax parallax-1" style="background-image: url(&quot;https://cdn.codelab.mx/smarty/assets/media/alt/parallax1.jpeg&quot;); background-position: 50% -239px;">
+    <div class="overlay dark-7">
+        <!-- dark overlay [1 to 9 opacity] -->
+    </div>
+
+    <div class="container">
+
+        <div class="text-center">
+            <h3 class="font-khausan-script nomargin weight-300">ALT es versátil y flexible</h3>
+            <p class="font-lato weight-300 lead nomargin-top"><span>Equipo multidisciplinar adaptable a las peculiaridades de cada proyecto</span></p>
+    </div>
+
+    </div>
+</section>
+<section>
+				<div class="container">
+
+					<p class="lead">Mediante el uso cámaras termográficas podemos obtener mediciones de temperatura sin contacto con precisión y rapidez.</p>
+
+					<div class="divider divider-center divider-color mt-0 mb-80"><!-- divider -->
+						<i class="fa fa-chevron-down"></i>
+					</div>
+
+					<div class="columnize-2">
+						
+						<h2 class="fs-20">¿Qué está incluido?</h2>
+						<ul class="list">
+							<li><i></i>Cámara(s) termográfica(s) seleccionadas para su
+proyecto.</li>
+							<li><i></i>Armario eléctrico con el hardware necesario para
+su aplicación y pantalla táctil integrada.</li>
+							<li><i></i>Todos los cables de conexión y accesorios.</li>
+
+						</ul>
+
+						<h2 class="fs-20">¿Puede ThermoGenius ser personalizable?</h2>
+						<p>
+							Sí, ThermoGenius se puede personalizar según las
+necesidades de su aplicación en cuanto a cantidad de
+cámaras, salidas digitales y analógicas, tamaño,
+comunicación con otros dispositivos y funcionalidad
+del software. Para solicitar una personalización debe
+ponerse en contacto con nosotros y nos encargamos de ofrecerte una solucion adecuada para tu empresa en AlT Ingeniería ofrecemos soluciones a la medida y podemos ayudarte a encontrar la solucion a los problemas que tu empresa enfrenta
+						</p>
+
+						<h2 class="fs-20">¿Cómo puede ThermoGenius comunicarse con mi
+equipamiento?</h2>
+						<p>
+ThermoGenius es un sistema flexible que permite la
+comunicación con dispositivos externos. Este posee la
+capacidad de emitir alertas por regiones de interés y
+enviar los datos temperaturas, a través de:
+						</p>
+						<ul class="list">
+							<li><i></i>Cámara(s) termográfica(s) seleccionadas para su
+proyecto.</li>
+							<li><i></i>Armario eléctrico con el hardware necesario para
+su aplicación y pantalla táctil integrada.</li>
+							<li><i></i>Todos los cables de conexión y accesorios.</li>
+
+						</ul>
+
+
+						<h2 class="fs-20">¿Cuento con soporte técnico para la
+instalación?</h2>
+						<p>
+Sí, se recomienda la contratación de nuestro personal
+tanto para el montaje y puesta en marcha de
+ThermoGenius como para una capacitación inicial.
+						</p>
+		
+
+					</div>
+{% comment %}
+					<!-- CALLOUT -->
+					<div class="callout alert alert-border mt-60 mb-60">
+
+						<div class="row">
+
+							<div class="col-md-9 col-sm-12"><!-- left text -->
+								<h4>llama al <strong>+52 1 (442)-455-42-13</strong> y obtén una cotización</h4>
+								<p class="font-lato fs-17">
+									Somos expertos en soluciones tecnológicas
+								</p>
+							</div><!-- /left text -->
+
+							
+							<div class="col-md-3 col-sm-12 text-right"><!-- right btn -->
+								<a href="#" class="btn btn-default btn-lg">CONTÁCTANOS</a>
+							</div><!-- /right btn -->
+
+						</div>
+
+					</div>
+					<!-- /CALLOUT -->
+{% endcomment %}
+
+
+				</div>
+			</section>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+	<div class="modal-content">
+		<!-- Modal Header -->
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Thermogenius</h4>
+		</div>
+		<!-- Modal Body -->
+		<div class="modal-body">
+			<h4>Sistema integral de inspección termográfica</h4>
+			<p>ThermoGenius es una solución integral de
+				inspección termográfica. Se trata de un sistema
+				multicámara con funciones avanzadas de
+				visualización, registro y alarma. Este puede ser
+			personalizable según las necesidades del cliente.</p>
+			<p>ThermoGenius contiene el software y hardware
+				necesario para la detección automática de defectos
+				en productos, mantenimiento predictivo, detección
+				temprana de fallos de operación en máquinas y
+				redes eléctricas, análisis de objetos o
+				monitorización de temperaturas en cualquier tipo
+				de proceso y automatización en general de
+			operaciones utilizando la temperatura.</p>
+		</div>
+		<!-- Modal Footer -->
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+</div>
+<div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+	<div class="modal-content">
+		<!-- Modal Header -->
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Ficha Técnica</h4>
+		</div>
+		<!-- Modal Body -->
+		<div class="modal-body">
+			<h4>Modelo S</h4>
+			<table class="shop-compare table table-bordered">
+				<tbody>
+					<tr>
+						<!-- title -->
+						<td class="text-right shop-compare-title">Especifiaciones</td>
+						
+						<!-- specs product 1 -->
+						<td>
+							<p class="break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<ul class="list-unstyled">
+								<li><i class="fa fa-check text-success"></i> 1 camara</li>
+								<li><i class="fa fa-check text-success"></i> Pantalla Táctil de 10.4"</li>
+								<li><i class="fa fa-remove text-danger"></i> tempor incididunt ut</li>
+								<li><i class="fa fa-check text-success"></i> Gabinete 400x400x210 mm</li>
+								<li><i class="fa fa-remove text-danger"></i> enim ad minim veniam</li>
+								<li><i class="fa fa-check text-success"></i>4 Salidas analógicas opcionales nostrud exercitation</li>
+								<li><i class="fa fa-remove text-danger"></i> ullamco laboris nisi ut</li>
+								<li><i class="fa fa-check text-success"></i> De 8 a 24 salidas digitales</li>
+							</ul>
+						</td>
+						
+						<!-- specs product 2 -->
+						<!-- specs product 3 -->
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- Modal Footer -->
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+</div>
+<div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+	<div class="modal-content">
+		<!-- Modal Header -->
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Ficha Técnica</h4>
+		</div>
+		<!-- Modal Body -->
+		<div class="modal-body">
+						<h4>Modelo S</h4>
+			<table class="shop-compare table table-bordered">
+				<tbody>
+					<tr>
+						<!-- title -->
+						<td class="text-right shop-compare-title">Especifiaciones</td>
+						
+						<!-- specs product 1 -->
+						<td>
+							<p class="break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<ul class="list-unstyled">
+								<li><i class="fa fa-check text-success"></i> 1 camara</li>
+								<li><i class="fa fa-check text-success"></i> Pantalla Táctil de 10.4"</li>
+								<li><i class="fa fa-remove text-danger"></i> tempor incididunt ut</li>
+								<li><i class="fa fa-check text-success"></i> Gabinete 400x400x210 mm</li>
+								<li><i class="fa fa-remove text-danger"></i> enim ad minim veniam</li>
+								<li><i class="fa fa-check text-success"></i>4 Salidas analógicas opcionales nostrud exercitation</li>
+								<li><i class="fa fa-remove text-danger"></i> ullamco laboris nisi ut</li>
+								<li><i class="fa fa-check text-success"></i> De 8 a 24 salidas digitales</li>
+							</ul>
+						</td>
+						
+						<!-- specs product 2 -->
+						<!-- specs product 3 -->
+					</tr>
+				</tbody>
+			</table>
+			<h4>Modelo M</h4>
+			<table class="shop-compare table table-bordered">
+				<tbody>
+					<tr>
+						<!-- title -->
+						<td class="text-right shop-compare-title">Especifiaciones</td>
+						
+						<!-- specs product 1 -->
+						<td>
+							<p class="break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<ul class="list-unstyled">
+								<li><i class="fa fa-check text-success"></i>Hasta 2 cámaras</li>
+								<li><i class="fa fa-check text-success"></i>Pantalla táctil de 15”</li>
+								<li><i class="fa fa-remove text-danger"></i> tempor incididunt ut</li>
+								<li><i class="fa fa-check text-success"></i> Gabinete 500x500x250 mm</li>
+								<li><i class="fa fa-remove text-danger"></i> enim ad minim veniam</li>
+								<li><i class="fa fa-check text-success"></i>4 Salidas analógicas opcionales</li>
+								<li><i class="fa fa-remove text-danger"></i> ullamco laboris nisi ut</li>
+								<li><i class="fa fa-check text-success"></i> De 8 a 24 salidas digitales</li>
+							</ul>
+						</td>
+						
+						<!-- specs product 2 -->
+						<!-- specs product 3 -->
+					</tr>
+				</tbody>
+			</table>
+						<h4>Modelo L</h4>
+			<table class="shop-compare table table-bordered">
+				<tbody>
+					<tr>
+						<!-- title -->
+						<td class="text-right shop-compare-title">Especifiaciones</td>
+						
+						<!-- specs product 1 -->
+						<td>
+							<p class="break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<ul class="list-unstyled">
+								<li><i class="fa fa-check text-success"></i> Hasta 4 cámaras</li>
+								<li><i class="fa fa-check text-success"></i>Pantalla táctil de 17”</li>
+								<li><i class="fa fa-remove text-danger"></i> tempor incididunt ut</li>
+								<li><i class="fa fa-check text-success"></i> Gabinete 600x600x250 mm</li>
+								<li><i class="fa fa-remove text-danger"></i> enim ad minim veniam</li>
+								<li><i class="fa fa-check text-success"></i>4 Salidas analógicas</li>
+								<li><i class="fa fa-remove text-danger"></i> ullamco laboris nisi ut</li>
+								<li><i class="fa fa-check text-success"></i>24 Salidas digitales</li>
+							</ul>
+						</td>
+						
+						<!-- specs product 2 -->
+						<!-- specs product 3 -->
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<!-- Modal Footer -->
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+</div>
+<div id="myModal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+	<div class="modal-content">
+		<!-- Modal Header -->
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Ficha Técnica</h4>
+		</div>
+		<!-- Modal Body -->
+		<div class="modal-body">
+			<h4>Modelo L</h4>
+			<table class="shop-compare table table-bordered">
+				<tbody>
+					<tr>
+						<!-- title -->
+						<td class="text-right shop-compare-title">Especifiaciones</td>
+						
+						<!-- specs product 1 -->
+						<td>
+							<p class="break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<ul class="list-unstyled">
+								<li><i class="fa fa-check text-success"></i> Hasta 4 cámaras</li>
+								<li><i class="fa fa-check text-success"></i>Pantalla táctil de 17”</li>
+								<li><i class="fa fa-remove text-danger"></i> tempor incididunt ut</li>
+								<li><i class="fa fa-check text-success"></i> Gabinete 600x600x250 mm</li>
+								<li><i class="fa fa-remove text-danger"></i> enim ad minim veniam</li>
+								<li><i class="fa fa-check text-success"></i>4 Salidas analógicas</li>
+								<li><i class="fa fa-remove text-danger"></i> ullamco laboris nisi ut</li>
+								<li><i class="fa fa-check text-success"></i>24 Salidas digitales</li>
+							</ul>
+						</td>
+						
+						<!-- specs product 2 -->
+						<!-- specs product 3 -->
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- Modal Footer -->
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+</div>
+{% endblock %}

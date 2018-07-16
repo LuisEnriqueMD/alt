@@ -1,0 +1,401 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block content %}
+
+<!-- INTRODUCCION -->
+<section>
+	<div class="container">
+		<div class="divider divider-center divider-color">
+			<!-- divider -->
+			<i class="fa fa-microchip"></i>
+		</div>
+		<article class="row">
+			<div class="col-md-6">
+				<!-- OWL SLIDER -->
+				<div class="owl-carousel buttons-autohide controlls-over" data-plugin-options='{"singleItem": true, "autoPlay": true, 							"navigation": true, "pagination": true, "transitionStyle":"backSlide"}'>
+					<div>
+						<img class="img-responsive" src="{% static 'media/alt/parallax1.jpeg' %}" alt="">
+					</div>
+					<div>
+						<img class="img-responsive" src="{% static 'media/alt/parallax2.jpeg' %}" alt="">
+					</div>
+					<div>
+						<img class="img-responsive" src="{% static 'media/alt/parallax3.jpeg' %}" alt="">
+					</div>
+				</div>
+				<!-- /OWL SLIDER -->
+			</div>
+			<div class="col-md-6">
+				<h3>ALT Ingeniería: Visión expertos en el área.</h3>
+				<p style="font-size:19px;">Mediante el uso de cámaras especiales junto con sistemas de iluminación específicos y las técnicas adecuadas de adquisición, procesamiento y análisis de imágenes se consigue la información necesaria de un objeto bajo análisis para determinar dimensiones, formas, colores, orientación y situación espacial. </p>
+
+			</div>
+		</article>
+	</div>
+</section>
+<!-- END INTRODUCCION -->
+
+
+<!--SECCION CARACTERISTICAS SERVICIOS-->
+<section>
+	<div class="container">
+
+		<!-- FEATURED BOXES 3 -->
+		<div class="row">
+			<div class="col-md-3 col-xs-6">
+				<div class="text-center">
+					<i class="ico-light ico-lg ico-rounded ico-hover fa fa fa-search"></i>
+					<h4>Inspeccion Automatizada</h4>
+					<p>Análisis de defectos y características de piezas en proceso de fabricación sin contacto físico.</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<div class="text-center">
+					<i class="ico-light ico-lg ico-rounded ico-hover fa fa-star-o"></i>
+					<h4>Mejora de Calidad</h4>
+					<p>Control de la variabilidad de los procesos y defectos en los productos.</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<div class="text-center">
+					<i class="ico-light ico-lg ico-rounded ico-hover fa  fa-line-chart"></i>
+					<h4>Servicio Integral</h4>
+					<p>Nos encargamos del diseño, instalación y puesta en marcha.</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<div class="text-center">
+					<i class="ico-light ico-lg ico-rounded ico-hover fa fa-user"></i>
+					<h4>Personalizado</h4>
+					<p>Nos apegamos fielmente a las necesidades y requisitos del cliente asesorando en detalle de las posibles soluciones.</p>
+				</div>
+			</div>
+		</div>
+		<!-- /FEATURED BOXES 3 -->
+
+	</div>
+</section>
+<!--- END SECCION CARACTERISTICAS SERVICIOS-->
+
+
+<!-- SECCION PROCESOS
+			<section>
+				<div class="container">
+
+					<header class="text-center">
+						<h2 class="nomargin">Nuestro Proceso de Trabajo</h2>
+						<p class="font-lato size-20 nomargin">Nuestro proceso al éxito</p>
+					</header>
+				<p>Reparación Servicio de reparación de sistemas electrónicos dañados o en mal funcionamiento Ofrecemos Análisis de averías
+				En casos especiales instalamos equipos datalogger para la recopilación de datos durante largos períodos de tiempo Reparación de equipos industriales
+				Reconstrucción de circuitos electrónicos.</p>
+
+					<div class="divider divider-center"><!
+						<i class="fa fa-chevron-down"></i>
+					</div>
+
+					<ul class="process-steps process-steps-square nav nav-justified">
+						<li class="active">
+
+							<a href="#step1" data-toggle="tab">1</a>
+							<h5>Mesa de Trabajo</h5>
+							</li>
+
+						<li>
+							<a href="#step2" data-toggle="tab">2</a>
+							<h5>Planeación</h5>
+						</li>
+						<li>
+							<a href="#step3" data-toggle="tab">3</a>
+							<h5>Diseño</h5>
+						</li>
+						<li>
+							<a href="#step4" data-toggle="tab">4</a>
+							<h5>Desarollo</h5>
+						</li>
+						<li>
+							<a href="#step5" data-toggle="tab">5</a>
+							<h5>Pruebas</h5>
+						</li>
+						<li>
+							<a href="#step6" data-toggle="tab">6</a>
+							<h5>Entrega</h5>
+						</li>
+					</ul>
+
+					<div class="tab-content margin-top-30">
+						<div class="tab-pane active" id="step1">
+							<strong>Mesa de Trabajo</strong> heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+
+						<div class="tab-pane" id="step2">
+							<strong>Planeación</strong>  denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+
+						<div class="tab-pane" id="step3">
+							<strong>Diseño</strong>  tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+
+						<div class="tab-pane" id="step4">
+							<strong>Desarrollo</strong>  cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+
+						<div class="tab-pane" id="step5">
+							<strong>Pruebas</strong>  cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+						<div class="tab-pane" id="step6">
+							<strong>Entrega</strong>  Regan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!- END SECCION PROCESOS-->
+
+
+<!-- DESCANSO VISUAL 2
+			<section class="parallax parallax-2" style="background-image: url('{% static 'media/alt/electronica_descanso.jpeg' %}'); background-position: 50% 107px;">
+				<div class="overlay dark-7"><!</div>
+				<div class="container text-center">
+					<h2 class="font-raleway margin-bottom-10">"{% static 'media/alt/parallax1.jpeg' %}"
+						<span class="countTo" data-speed="4000">15</span> Projectos Entregados
+					</h2>
+					<h3 class="size-25">Clientes<span> Satisfechos</span>. Desarrollos<span> Únicos</span>!</h3>
+				</div>
+			</section>
+			<!- END DESCANSO VISUAL 2-->
+<section>
+	<div class="container">
+		<header class="text-center">
+			<h2>"Nuestros Servicios"</h2>
+
+
+		</header>
+		<div class="divider divider-center">
+			<i class="fa fa-building"></i>
+		</div>
+		<div class="timeline">
+
+			<!-- Proyectos -->
+
+			<!-- ITEM -->
+			<div class="timeline-item timeline-item-bordered">
+				<!-- timeline entry -->
+				<div class="timeline-entry rounded" style="border:rgb(54, 97, 146) 3px solid; color:rgb(54, 97, 146);">
+					<!-- .rounded = entry -->
+					01<span></span>
+					<div class="timeline-vline" style="color:blue;">
+						<!-- vertical line -->
+					</div>
+				</div>
+				<!-- /timeline entry -->
+
+				<h2 class="uppercase bold size-17">Técnicas de Visión</h2>
+				<p>Las técnicas de visión artificial se pueden aplicar en innumerables casos, como por ejemplo en: Detección automática de defectos. Identificación de dolores y formas. Metrología y control dimensional. Lectura de códigos.</p>
+
+
+
+			</div>
+			<!-- /ITEM -->
+
+			<!-- ITEM -->
+			<div class="timeline-item timeline-item-bordered">
+				<!-- timeline entry -->
+				<div class="timeline-entry rounded" style="border:rgb(54, 97, 146) 3px solid; color:rgb(54, 97, 146);">
+					<!-- .rounded = entry -->
+					02<span></span>
+					<div class="timeline-vline">
+						<!-- vertical line -->
+					</div>
+				</div>
+				<!-- /timeline entry -->
+
+				<h2 class="uppercase bold size-17">Objetivos</h2>
+				<p>Perfeccionamiento de equipos para su mejor fabricación y test, Realizar controles de calidad de productos que no es posible verificar por métodos tradicionales, Realizar mediciones de objetos sin contacto físico. </p>
+
+			</div>
+			<!-- /ITEM -->
+
+
+			<div class="timeline-item timeline-item-bordered">
+				<!-- timeline entry -->
+				<div class="timeline-entry rounded" style="border:rgb(54, 97, 146) 3px solid; color:rgb(54, 97, 146);">
+					<!-- .rounded = entry -->
+					03<span></span>
+					<div class="timeline-vline">
+						<!-- vertical line -->
+					</div>
+				</div>
+				<!-- /timeline entry -->
+
+				<h2 class="uppercase bold size-17">Sectores de Aplicación</h2>
+				<div class="row">
+														<div class="col-md-6 col-sm-6">
+
+															<label class="block">
+																<span class="pull-right">97%</span>
+																Electrónica &amp; Construcción
+															</label>
+															<div class="progress progress-xxs">
+																<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 97%; min-width: 2em;"></div>
+															</div>
+
+														</div>
+														<div class="col-md-6 col-sm-6">
+
+															<label class="block">
+																<span class="pull-right">88%</span>
+																Areonaútico
+															</label>
+															<div class="progress progress-xxs">
+																<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%; min-width: 2em;"></div>
+															</div>
+
+														</div>
+														<div class="col-md-6 col-sm-6">
+
+															<label class="block">
+																<span class="pull-right">78%</span>
+																Ferroviario &amp; Alimentación
+															</label>
+															<div class="progress progress-xxs">
+																<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%; min-width: 2em;"></div>
+															</div>
+
+														</div>
+														<div class="col-md-6 col-sm-6">
+
+															<label class="block">
+																<span class="pull-right">89%</span>
+																Automotriz
+															</label>
+															<div class="progress progress-xxs">
+																<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%; min-width: 2em;"></div>
+															</div>
+
+														</div>
+													</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<img class="img-responsive" src="{% static 'media/alt/parallax1.jpeg' %}" style="height:250px;" alt="image">
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<img class="img-responsive" src="{% static 'media/alt/parallax2.jpeg' %}" style="height:250px;" alt="image">
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<img class="img-responsive" src="{% static 'media/alt/parallax3.jpeg' %}" style="height:250px;" alt="image">
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+</section>
+
+<!-- PROJECTOS RELACIONADOS-->
+<section>
+	<div class="container">
+
+		<header class="text-center margin-bottom-60">
+			<h2>Nuestros Proyectos de Electronica</h2>
+			<p class="lead font-lato"></p>
+			<hr>
+		</header>
+
+		<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
+			<div class="img-hover">
+				<a href="blog-single-default.html">
+					<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" alt="">
+				</a>
+
+				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 1</a></h4>
+				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+				<ul class="text-left size-12 list-inline list-separator">
+					<li>
+						<i class="fa fa-calendar"></i> 29th Jan 2015
+					</li>
+					<li>
+						<a href="blog-single-default.html#comments">
+							<i class="fa fa-comments"></i> 3
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="img-hover">
+				<a href="blog-single-default.html">
+					<img class="img-responsive" src="{% static 'media/alt/oximetro2.png' %}" alt="">
+				</a>
+
+				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 2</a></h4>
+				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+				<ul class="text-left size-12 list-inline list-separator">
+					<li>
+						<i class="fa fa-calendar"></i> 29th Jan 2015
+					</li>
+					<li>
+						<a href="blog-single-default.html#comments">
+							<i class="fa fa-comments"></i> 3
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="img-hover">
+				<a href="blog-single-default.html">
+					<img class="img-responsive" src="{% static 'media/alt/campana.png' %}" alt="">
+				</a>
+
+				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 3</a></h4>
+				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+				<ul class="text-left size-12 list-inline list-separator">
+					<li>
+						<i class="fa fa-calendar"></i> 29th Jan 2015
+					</li>
+					<li>
+						<a href="blog-single-default.html#comments">
+							<i class="fa fa-comments"></i> 3
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="img-hover">
+				<a href="blog-single-default.html">
+					<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" alt="">
+				</a>
+
+				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 4</a></h4>
+				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+				<ul class="text-left size-12 list-inline list-separator">
+					<li>
+						<i class="fa fa-calendar"></i> 29th Jan 2015
+					</li>
+					<li>
+						<a href="blog-single-default.html#comments">
+							<i class="fa fa-comments"></i> 3
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="img-hover">
+				<a href="blog-single-default.html">
+					<img class="img-responsive" src="{% static 'media/alt/oximetro2.png' %}" alt="">
+				</a>
+				<h4 class="text-left margin-top-20"><a href="blog-single-default.html">Proyecto 5</a></h4>
+				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.</p>
+				<ul class="text-left size-12 list-inline list-separator">
+					<li>
+						<i class="fa fa-calendar"></i> 29th Jan 2015
+					</li>
+					<li>
+						<a href="blog-single-default.html#comments">
+							<i class="fa fa-comments"></i> 3
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

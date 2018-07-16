@@ -30,11 +30,29 @@
 
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="{% static 'css/header-blue.css' %}" rel="stylesheet" type="text/css" />
+		<link href="{% static 'css/layout-shop.css' %}" rel="stylesheet" type="text/css" />
 		<link href="{% static 'css/color_scheme/alt-blue.css' %}" rel="stylesheet" type="text/css" id="color_scheme" />
 
 		<!-- OTHER WEIRD CSS -->
+		<!-- MODIFICACIONES ESPECIALES CSS -->
+		<style>
+
+		#customicon {
+  		content:  url('{% static "media/alt/instrumentacion.svg" %}');
+  		width: 24px;
+  		height: 32px;
+  		padding: 6px 4px 2px;
+  		opacity: 0.9
+		!important;	}
+
+		#size {
+		font-size: 24px
+		!important;	}
+		</style>
+	{% block head %}
 
 
+	{% endblock %}
 	</head>
 
 	<body class="smoothscroll enable-animation">
@@ -72,17 +90,20 @@
 	<!-- Mobile Menu Button -->
 	<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse"><i class="fa fa-bars"></i></button>
 	<!-- Logo -->
-	<a class="logo pull-left"><img src="{% static 'media/alt/logo1.svg' %}" alt="" /></a>
+	<a class="logo pull-left"><img src="{% static 'media/alt/logo1.svg' %}" alt="" href="/"></a>
 	<div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
 		<nav class="nav-main">
 		{% if Menu is None %}
 			<ul id="topMain" class="nav nav-pills nav-main">
-				<li class="dropdown {% if Active == 'home' %}active{% else %}{% endif %}"><a href="">INICIO</a></li>
-				<li class="dropdown {% if Active == 'nosotros' %}active{% else %}{% endif %}"><a href="">NOSOTROS</a></li>
-				<li class="dropdown {% if Active == 'productos' %}active{% else %}{% endif %}"><a href="">SERVICIOS</a></li>
-				<li class="dropdown {% if Active == 'proyectos' %}active{% else %}{% endif %}"><a href="">PROYECTOS</a></li>
-				<li class="dropdown {% if Active == 'clientes' %}active{% else %}{% endif %}"><a href="">CLIENTES</a></li>
-				<li class="dropdown {% if Active == 'contacto' %}active{% else %}{% endif %}"><a href="">CONTACTO</a></li>
+				<li class="dropdown {% if Active == 'home' %}active{% else %}{% endif %}"><a href="/">INICIO</a></li>
+				<li class="dropdown {% if Active == 'nosotros' %}active{% else %}{% endif %}"><a href="/#nosotros">NOSOTROS</a></li>
+				<li class="dropdown {% if Active == 'productos' %}active{% else %}{% endif %}"><a href="/#servicios">SERVICIOS</a></li>
+				<li class="dropdown {% if Active == 'proyectos' %}active{% else %}{% endif %}"><a href="{% url 'proyectos'%}">PROYECTOS</a></li>
+				<li class="dropdown {% if Active == 'clientes' %}active{% else %}{% endif %}"><a href="/#clientes">CLIENTES</a></li>
+				<li class="dropdown {% if Active == 'contacto' %}active{% else %}{% endif %}"><a href="{% url 'contact'%}">CONTACTO</a></li>
+				{% comment %}
+				<li class="dropdown"><a href="{% url 'job'%}">EMPLEO</a></li>
+				{% endcomment %}
 			</ul>
 		{% endif %}
 		</nav>
@@ -96,7 +117,7 @@
 
 
 			{% if Breadcrum is True %}
-			<section class="page-header parallax parallax-1" style="background-color:#366192;" background-position: 10% 10px;">
+			<section class="page-header parallax parallax-1" style="background-color:#366192;" background-position: 10% 10px;>
 				<div class="overlay dark-4"></div>
 				<div class="container">
 					<h1 style="text-transform:uppercase">{{ message }}</h1>
@@ -127,26 +148,28 @@
 
 						<div class="col-md-4">
 							<!-- Footer Logo -->
-							<img class="footer-logo" src="" alt="">
 
 							<!-- Small Description -->
-							<p><span></span></p>
+							<p>ALT Ingeniería</p>
 
 							<!-- Contact Address -->
 							<address>
-								<ul class="list-unstyled">
-									<li class="footer-sprite address">
-										Sendero de la Ladera 16<br>
-										Milenio III<br>
-										76060 Querétaro, QRO<br>
-									</li>
-									<li class="footer-sprite email">
-										<a href="mailto:info@altingenieria.mx">info@altingenieria.mx</a>
-									</li>
-								</ul>
+											<ul class="list-unstyled">
+												<li class="footer-sprite address">
+													Sendero de la ladera 16<br>
+													Milenio III<br>
+													76060 Querétaro, QRO<br>
+												</li>
+												<li class="footer-sprite phone">
+													+52 1 (442)-455-42-13<br>
+												</li>
+
+												<li class="footer-sprite email">
+													<a href="mailto:info@altingenieria.mx">info@altingenieria.mx</a>
+												</li>
+											</ul>
 							</address>
 							<!-- /Contact Address -->
-
 						</div>
 
 
@@ -156,13 +179,11 @@
 							<!-- Links -->
 							<h4 class="letter-spacing-1">Nuestro Sitio</h4>
 							<ul class="footer-links list-unstyled">
-								<li><a href="#">Home</a></li>
-								<li><a href="#nosotros">Nosotos</a></li>
-								<li><a href="#servicios">Nuestros Servicios</a></li>
-								<li><a href="#">Proyectos</a></li>
-								<li><a href="#Clientes">Clientes</a></li>
-								<li><a href="#">Testimonios</a></li>
-								<li><a href="#">Trabaja Con Nosotros</a></li>
+								<li><a href="/">Home</a></li>
+								<li><a href="/">Nosotos</a></li>
+								<li><a href="/">Nuestros Servicios</a></li>
+								<li><a href="/">Clientes</a></li>
+								<li><a href="/">Testimonios</a></li>
 							</ul>
 							<!-- /Links -->
 
@@ -174,22 +195,6 @@
 								<div class="footer-gallery lightbox" data-plugin-options='{"delegate": "a", "gallery": {"enabled": true}}'>
 									<a href="assets/images/demo/1200x800/10-min.jpg">
 									<img src='{% static "media/alt/National_Instruments_logo.png" %}'  alt="" />
-									</a>
-
-							<h4 class="letter-spacing-1 pull-right"></h4>
-								<p><br><br><br><br><br><br> <br>Subscribe a nuestro Newsletter</p>
-									<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right" novalidate="novalidate">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="fa fa-envelope"></i>
-											</span>
-												<input id="email" name="email" class="form-control required" placeholder="Enter your Email" type="email">
-											<span class="input-group-btn">
-												<button class="btn btn-success" type="submit">Subscríbete</button>
-											</span>
-										</div>
-										<input name="is_ajax" value="true" type="hidden">
-									</form>
-
 				</div>
 
 			</div>
@@ -276,7 +281,7 @@
 								tmp: '<div class="tp-tab-wrapper"><div class="tp-tab-number">{{param1}}</div><div class="tp-tab-divider"></div><div class="tp-tab-title-mask"><div class="tp-tab-title">{{title}}</div></div></div>',
 								visibleAmount: 5,
 								hide_onmobile: true,
-								hide_under: 800,
+								hide_under: 20000,
 								hide_onleave: false,
 								hide_delay: 200,
 								direction: "vertical",

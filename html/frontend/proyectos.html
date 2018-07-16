@@ -1,237 +1,199 @@
-{% extends 'base.html' %}
-{% load staticfiles %}
-{% block content %}
-			<!-- -->
-			<section>
-				<div class="container">
+{% extends 'base.html' %} {% load staticfiles %} {% block content %}
+<!-- -->
+<section>
+	<div class="container">
 
-					<div class="row">
+		<div class="row">
 
-						<!-- POST ITEM -->
-						<div class="blog-post-item col-md-4 col-sm-4">
+			<!-- POST ITEM -->
+			<div class="blog-post-item col-md-4 col-sm-6">
+				<!-- IMAGE -->
+				<figure class="margin-bottom-20">
+					<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" style="height:200px;" alt="">
+				</figure>
 
-							<!-- IMAGE -->
-							<figure class="margin-bottom-20">
-								<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" alt="">
-							</figure>
+				<h2><a href="blog-single-default.html">Terminal de Trazabilidad</a></h2>
 
-							<h2><a href="blog-single-default.html">TERMINAL DE TRAZABILIDAD</a></h2>
+				<ul class="blog-post-info list-inline">
+					<li>
+						<a href="#">
+							<i class="fa fa-clock-o"></i>
+							<span class="font-lato">29 de Junio, 2015</span>
+						</a>
+					</li>
+				</ul>
 
-							<ul class="blog-post-info list-inline">
-								<li>
-									<a href="#">
-										<i class="fa fa-clock-o"></i> 
-										<span class="font-lato">June 29, 2015</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-comment-o"></i> 
-										<span class="font-lato">28</span>
-									</a>
-								</li>
-							</ul>
+				<p>Solución integral de hardware y software de trazabilidad de empaque durante la etapa de etiquetado y clasificación en centros hortifrutícolas </p>
 
-							<p>Solución integral de hardware y software de trazabilidad de empaque durante la etapa de etiquetado y clasificación en centros hortifrutícolas ​ Implementación en Ordenador de Placa Reducida Raspberry Pi.</p>
-
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
-								<i class="fa fa-plus"></i>
-								<span>Leer Más</span>
-							</a>
-
-						</div>
-						<!-- /POST ITEM -->
-
-						<!-- POST ITEM -->
-						<div class="blog-post-item col-md-4 col-sm-4">
-
-							<!-- IMAGE -->
-							<figure class="margin-bottom-20">
-								<img class="img-responsive" src="{% static 'media/alt/oximetro2.png' %}" alt="">
-							</figure>
-
-							<h2><a href="blog-single-default.html">OXIMETRO RECIEN NACIDO</a></h2>
-
-							<ul class="blog-post-info list-inline">
-								<li>
-									<a href="#">
-										<i class="fa fa-clock-o"></i> 
-										<span class="font-lato">June 29, 2015</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-comment-o"></i> 
-										<span class="font-lato">28</span>
-									</a>
-								</li>
-							</ul>
-
-							<p>Solución integral para la monitorización inalámbrica de la saturación de oxígeno en la sangre y pulso cardíaco en bebés Wearable recargable que es adaptable al tobillo del bebé, y que envía la información en tiempo real.</p>
-
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
-								<i class="fa fa-plus"></i>
-								<span>Leer Más</span>
-							</a>
-
-						</div>
-						<!-- /POST ITEM -->
+				<a href="{% url 'proyecto_trazabilidad'%}" target="blank" class="btn btn-reveal btn-default">
+					<i class="fa fa-plus"></i>
+					<span>Leer Más</span>
+				</a>
+			</div>
+			<!-- /POST ITEM -->
 
 
-						<!-- POST ITEM -->
-						<div class="blog-post-item col-md-4 col-sm-4">
+			<!-- POST ITEM -->
+			<div class="blog-post-item col-md-4 col-sm-6">
 
-							<!-- IMAGE -->
-							<figure class="margin-bottom-20">
-								<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" alt="">
-							</figure>
+				<!-- IMAGE -->
+				<figure class="margin-bottom-20">
+					<img class="img-responsive" src="{% static 'media/alt/oximetro1.png' %}" style="height:200px;" alt="">
+				</figure>
 
-							<h2><a href="blog-single-default.html">AUTOMATIZACIÓN CAMPANA</a></h2>
+				<h2><a href="blog-single-default.html">Oxímetro para bebes</a></h2>
 
-							<ul class="blog-post-info list-inline">
-								<li>
-									<a href="#">
-										<i class="fa fa-clock-o"></i> 
-										<span class="font-lato">June 29, 2015</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-comment-o"></i> 
-										<span class="font-lato">28</span>
-									</a>
-								</li>
-							</ul>
+				<ul class="blog-post-info list-inline">
+					<li>
+						<a href="#">
+							<i class="fa fa-clock-o"></i>
+							<span class="font-lato">21 de noviembre, 2015</span>
+						</a>
+					</li>
+				</ul>
 
-							<p>Sistema de control de campana extractora por Bluetooth BLE y Smartphone Circuito con sensor electroquímico para la detección de concentraciones de monóxido de carbono.</p>
+				<p>Solución integral para la monitorización inalámbrica de la saturación de oxígeno en la sangre y pulso cardíaco en bebés </p>
 
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
-								<i class="fa fa-plus"></i>
-								<span>Leer Más</span>
-							</a>
+				<a href="{% url 'proyecto_oximetro'%}" target="blank" class="btn btn-reveal btn-default">
+					<i class="fa fa-plus"></i>
+					<span>Leer Más</span>
+				</a>
 
-						</div>
-						<!-- /POST ITEM -->
+			</div>
+			<!-- /POST ITEM -->
 
 
-						<!-- POST ITEM -->
-						<div class="blog-post-item col-md-4 col-sm-4">
+			<!-- POST ITEM -->
+			<div class="blog-post-item col-md-4 col-sm-6">
 
-							<!-- IMAGE -->
-							<figure class="margin-bottom-20">
-								<img class="img-responsive" src="{% static 'media/alt/campana.png' %}" alt="">
-							</figure>
+				<!-- IMAGE -->
+				<figure class="margin-bottom-20">
+					<img class="img-responsive"  src="{% static 'media/alt/campana.png' %}" style="height:200px;" alt="">
+				</figure>
 
-							<h2><a href="blog-single-default.html">BLOG IMAGE POST</a></h2>
+				<h2><a href="blog-single-default.html">Automatización de campana</a></h2>
 
-							<ul class="blog-post-info list-inline">
-								<li>
-									<a href="#">
-										<i class="fa fa-clock-o"></i> 
-										<span class="font-lato">June 29, 2015</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-comment-o"></i> 
-										<span class="font-lato">28</span>
-									</a>
-								</li>
-							</ul>
+				<ul class="blog-post-info list-inline">
+					<li>
+						<a href="#">
+							<i class="fa fa-clock-o"></i>
+							<span class="font-lato">23 de Octubre, 2016</span>
+						</a>
+					</li>
+				</ul>
 
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable There are many.</p>
+				<p>Sistema de control de campana extractora por Bluetooth BLE y Smartphone, deteccion de monóxido de carbono</p>
 
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
-								<i class="fa fa-plus"></i>
-								<span>Leer Más</span>
-							</a>
+				<a href="{% url 'proyecto_campana'%}" target="blank" class="btn btn-reveal btn-default">
+					<i class="fa fa-plus"></i>
+					<span>Leer Más</span>
+				</a>
 
-						</div>
-						<!-- /POST ITEM -->
+			</div>
+			<!-- /POST ITEM -->
 
 
-						<!-- POST ITEM -->
-						<div class="blog-post-item col-md-4 col-sm-4">
+			<!-- POST ITEM -->
+			<div class="blog-post-item col-md-4 col-sm-6">
 
-							<!-- IMAGE -->
-							<figure class="margin-bottom-20">
-								<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" alt="">
-							</figure>
+				<!-- IMAGE -->
+				<figure class="margin-bottom-20">
+					<img class="img-responsive" src="{% static 'media/alt/ax81.jpeg' %}" style="height:200px;" alt="">
+				</figure>
 
-							<h2><a href="blog-single-default.html">ANOTHER BLOG POST</a></h2>
+				<h2><a href="blog-single-default.html">Monitorización Con Camaras FLIR</a></h2>
 
-							<ul class="blog-post-info list-inline">
-								<li>
-									<a href="#">
-										<i class="fa fa-clock-o"></i> 
-										<span class="font-lato">June 29, 2015</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-comment-o"></i> 
-										<span class="font-lato">28</span>
-									</a>
-								</li>
-							</ul>
+				<ul class="blog-post-info list-inline">
+					<li>
+						<a href="#">
+							<i class="fa fa-clock-o"></i>
+							<span class="font-lato">8 de junio 2016</span>
+						</a>
+					</li>
+				</ul>
+				<p>Software que permite visualizar cada una de las cámaras termográficas, fácil de usar y que no requiere que el usuario cuente con formación específica para el análisis de imágenes infrarrojas. </p>
 
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable There are many.</p>
+				<a href="{% url 'proyecto_monitorizacion'%}" target="blank" class="btn btn-reveal btn-default">
+					<i class="fa fa-plus"></i>
+					<span>Leer Más</span>
+				</a>
 
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
-								<i class="fa fa-plus"></i>
-								<span>Leer Más</span>
-							</a>
-
-						</div>
-						<!-- /POST ITEM -->
+			</div>
+			<!-- /POST ITEM -->
 
 
-						<!-- POST ITEM -->
-						<div class="blog-post-item col-md-4 col-sm-4">
+			<!-- POST ITEM -->
+			<div class="blog-post-item col-md-4 col-sm-6">
 
-							<!-- IMAGE -->
-							<figure class="margin-bottom-20">
-								<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" alt="">
-							</figure>
+				<!-- IMAGE -->
+				<figure class="margin-bottom-20">
+					<img class="img-responsive" src="{% static 'media/alt/localizador.png' %}" style="height:200px;" alt="">
+				</figure>
 
-							<h2><a href="blog-single-default.html">ANOTHER BLOG POST</a></h2>
+				<h2><a href="{% url 'proyecto_localizador'%}">Localizador Bluetooth</a></h2>
 
-							<ul class="blog-post-info list-inline">
-								<li>
-									<a href="#">
-										<i class="fa fa-clock-o"></i> 
-										<span class="font-lato">June 29, 2015</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-comment-o"></i> 
-										<span class="font-lato">28</span>
-									</a>
-								</li>
-							</ul>
+				<ul class="blog-post-info list-inline">
+					<li>
+						<a href="#">
+							<i class="fa fa-clock-o"></i>
+							<span class="font-lato">3 de marzo, 2015</span>
+						</a>
+					</li>
+				</ul>
 
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable There are many.</p>
+				<p>Un dispositivo electrónico con transceptor Bluetooth diseñado para alertar al usuario que se está alejando de un objeto personal o ha perdido contacto con él y pueda regresar por él. El sistema es configurable para mostrar un mensaje en el celular,
+					activar un sonido o un LED. </p>
 
-							<a href="blog-single-default.html" class="btn btn-reveal btn-default">
-								<i class="fa fa-plus"></i>
-								<span>Leer Más</span>
-							</a>
+				<a href="{% url 'proyecto_localizador'%}" target="blank" class="btn btn-reveal btn-default">
+					<i class="fa fa-plus"></i>
+					<span>Leer Más</span>
+				</a>
 
-						</div>
-						<!-- /POST ITEM -->
-
-					</div>
+			</div>
+			<!-- /POST ITEM -->
 
 
-					<!-- PAGINATION -->
-					<ul class="pager">
-					  <li class="previous"><a class="radius-0" href="#">&larr; Older</a></li>
-					  <li class="next"><a class="radius-0" href="#">Newer &rarr;</a></li>
-					</ul>
-					<!-- /PAGINATION -->
+			<!-- POST ITEM -->
+			<div class="blog-post-item col-md-4 col-sm-6">
 
-				</div>
-			</section>
-			<!-- / -->
+				<!-- IMAGE -->
+				<figure class="margin-bottom-20">
+					<img class="img-responsive" src="{% static 'media/alt/trazabilidad.png' %}" style="height:200px;" alt="">
+				</figure>
+
+				<h2><a href="blog-single-default.html">Medidor de vibraciones</a></h2>
+
+				<ul class="blog-post-info list-inline">
+					<li>
+						<a href="#">
+							<i class="fa fa-clock-o"></i>
+							<span class="font-lato">7 de septiembre, 2015</span>
+						</a>
+					</li>
+				</ul>
+
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, have suffered alteration in some form, by injected humour in some form, by injected humour Lorem ipsupus et dolor deum  in veritas. </p>
+
+				<a href="{% url 'proyecto_medidor'%}" target="blank" class="btn btn-reveal btn-default">
+					<i class="fa fa-plus"></i>
+					<span>Read More</span>
+				</a>
+
+			</div>
+			<!-- /POST ITEM -->
+
+
+
+		</div>
+
+		<!-- PAGINATION -->
+		<ul class="pager">
+			<li class="previous"><a class="radius-0" href="#">&larr; Older</a></li>
+			<li class="next"><a class="radius-0" href="#">Newer &rarr;</a></li>
+		</ul>
+		<!-- /PAGINATION -->
+
+	</div>
+</section>
+<!-- / -->
 {% endblock %}
